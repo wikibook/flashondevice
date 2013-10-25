@@ -1,0 +1,21 @@
+/* CSS file */
+.application
+{
+	paddingLeft: 20;
+	paddingRight: 20;
+	paddingTop: 20;
+	paddingBottom: 20;
+}
+
+.panelView
+{
+	horizontalGap: 20;
+	borderStyle: solid;
+	headerColors: #aaaaaa, #aaaaaa;
+	backgroundColor: #dddddd;
+	paddingLeft: 20;
+	paddingRight: 20;
+	paddingTop: 20;
+	paddingBottom: 20;
+}
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" 
+	xmlns:ai="http://ns.adobe.com/ai/2008" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+    <Group d:userLabel="pauseButton">
+      <Ellipse y="0.854492" blendMode="darken" width="41.3384" height="39.8027" ai:knockout="0">
+        <fill>
+          <SolidColor color="#3a3a3a"/>
+        </fill>
+      </Ellipse>
+      <Path alpha="0.6" winding="nonZero" ai:knockout="0" data="M38.5933 14.1792C38.6157 14.229 38.6294 14.2812 38.6479 14.3335 39.6216 15.8101 40.2144 17.5415 40.3315 19.3867 40.7202 20.3647 40.939 21.4121 41.0103 22.498 41.1968 22.251 41.3384 21.9941 41.3384 21.7178 41.3384 15.7192 39.0249 10.2891
+ 35.2837 6.36084 31.5435 2.43066 26.3765 0 20.6694 0 9.25439 0 0 9.72217 0 21.7178 0 22.2061 0.299805 22.6523 0.809082 23.0635 0.742188 21.5684 0.899902 20.0615 1.33447 18.6279 1.34326 18.603 1.35596 18.5806 1.36475 18.5557 1.52637 17.7397 1.76562
+ 16.9429 2.09863 16.1875 2.31396 15.103 2.68311 14.0454 3.25195 13.0571 6.92725 6.68115 13.7134 1.09668 21.1187 1.74316 28.7212 2.40771 35.2358 6.6543 38.5933 14.1792Z" >
+        <fill>
+          <SolidColor color="#999999"/>
+        </fill>
+      </Path>
+      <Group y="1.66016" d:id="3">
+        <Path alpha="0.6" winding="nonZero" ai:knockout="0" data="M41.3384 20.2451C41.3384 31.4238 0 31.4238 0 20.2451 0 9.06299 9.25439 0 20.6694 0 32.0835 0 41.3384 9.06299 41.3384 20.2451Z" >
+          <fill>
+            <LinearGradient x="20.7251" y="14.5273" scaleX="40.643" rotation="-89.418">
+              <GradientEntry color="#666666" ratio="0"/>
+              <GradientEntry color="#454545" alpha="0.83" ratio="0.20859"/>
+              <GradientEntry color="#0c0c0c" alpha="0.93" ratio="0.51534"/>
+              <GradientEntry ratio="0.57669"/>
+              <GradientEntry ratio="0.78528"/>
+              <GradientEntry alpha="0.83" ratio="0.99386"/>
+            </LinearGradient>
+          </fill>
+        </Path>
+      </Group>
+      <Rect x="12.8467" y="11.8706" width="4.125" height="19.3853" ai:knockout="0">
+        <fill>
+          <SolidColor color="#e6e6e6"/>
+        </fill>
+      </Rect>
+      <Rect x="23.8472" y="11.8706" width="4.125" height="19.3853" ai:knockout="0">
+        <fill>
+          <SolidColor color="#e6e6e6"/>
+        </fill>
+      </Rect>
+    </Group>
+</Skin>

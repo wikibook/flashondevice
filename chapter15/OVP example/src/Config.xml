@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+		
+       	<dependencies />
+
+        <extensions>
+        
+		<!-- content_metadata extensions -->
+		<extension>
+			<type>flash</type>
+			<id>contentMetadataDAOID</id>
+			<url>ContentMetadataExtension.swf</url>
+			<classDef>
+				com.nbcuni.outlet.extensions.content_metadata.ContentMetadataDAO
+			</classDef>
+			<dependencies></dependencies>
+		</extension>         
+           
+        </extensions>
+</config>

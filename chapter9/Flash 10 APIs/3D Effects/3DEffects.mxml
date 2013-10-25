@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowedApplication 
+	xmlns="http://ns.adobe.com/mxml/2009" 
+	layout="absolute">
+	
+    <Declarations>
+        <FxRotate3D id="rotateXdown"
+                target="{video}"
+                xFrom="0"
+                xTo="360"
+                duration="2000" />
+
+        <FxRotate3D id="rotateXup"
+                target="{video}"
+                xFrom="360"
+                xTo="0"
+                duration="2000" />
+
+        <FxRotate3D id="rotateYleft"
+                target="{video}"
+                yFrom="0"
+                yTo="360"
+                duration="2000" />
+
+        <FxRotate3D id="rotateYright"
+                target="{video}"
+                yFrom="360"
+                yTo="0"
+                duration="2000" />
+                
+        <FxRotate3D id="rotateZright"
+                target="{video}"
+                zFrom="0"
+                zTo="360"
+                duration="2000" />
+    </Declarations>
+
+    <VideoDisplay source="http://thehq.tv/wp-content/uploads/flv/2-13-teaser.flv" 
+    	id="video" width="300" height="300"
+    	x="200" y="96"/>
+    	
+    <FxButton id="fxButtonZ"
+            label="z"
+            click="rotateZright.play();"
+            x="119" y="359" height="10" width="14"/>
+    <FxButton id="fxButtonX"
+            label="x"
+            click="rotateXup.play();"  
+            x="121" y="330" width="10" height="25"/>
+    <FxButton id="fxButtonY"
+            label="y"
+            click="rotateYright.play();"  
+            x="138" y="360" width="25" height="10"/>
+    <FxButton id="fxButtonY0"
+            label="y"
+            click="rotateYleft.play();"  
+            x="86" y="358" width="25" height="10"/>
+    <FxButton id="fxButtonX0"
+            click="rotateXdown.play();"  
+            x="121" y="374" height="25" width="10"/>
+	
+	
+</WindowedApplication>

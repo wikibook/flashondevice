@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<movie width="320" height="240" framerate="12">
+ <background color="#000000"/>
+ <!-- 1st frame in SWF -->
+ <frame>
+  <!-- add Assets to the library in the SWF -->
+  <library>
+   <clip id="buttonID" import="library/button.png"/>  
+   <clip id="soundID" import="library/Yodel.nmp3"/>
+  </library>
+ </frame>
+</movie>

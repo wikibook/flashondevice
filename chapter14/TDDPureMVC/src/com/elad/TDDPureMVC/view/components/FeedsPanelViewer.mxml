@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
+	layout="vertical" 
+	width="600" height="450"
+	styleName="panelView">
+	
+	<mx:Script>
+		<![CDATA[
+		
+			import com.elad.TDDPureMVC.events.UserSelectedFeedEvent;
+			import com.elad.TDDPureMVC.model.vo.FeedVO;
+			
+		]]>
+	</mx:Script>
+	
+	<!-- Feeds List -->
+	<mx:List
+		id="feedList"
+		width="540" 
+		height="200"
+		borderStyle="solid"
+		change="dispatchEvent(new UserSelectedFeedEvent(FeedVO( feedList.selectedItem )));"
+		labelField="title"/>
+
+	<!-- Detail information -->
+	<mx:VBox width="540" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+		<mx:Spacer height="15" />
+		<mx:HBox>
+			<mx:Label text="FEED DETAIL:" fontWeight="bold"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="author:" fontWeight="bold"/>
+			<mx:Label id="author" width="100%"/>			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="category:" fontWeight="bold"/>
+			<mx:Label id="category" width="100%"/>			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="description:" fontWeight="bold"/>
+			<mx:Label id="description" width="100%"/>			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="link:" fontWeight="bold"/>
+			<mx:Label id="link" width="100%"/>			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="pubdate:" fontWeight="bold"/>
+			<mx:Label id="pubdate" width="100%"/>			
+		</mx:HBox>
+	</mx:VBox>
+		
+</mx:Panel>

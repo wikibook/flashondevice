@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:ai="http://ns.adobe.com/ai/2008" xmlns:d="http://ns.adobe.com/fxg/2008/dt" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Path winding="nonZero" ai:knockout="0" d:userLabel="volumeMin" data="M -0.008 7.97 L 6.147 7.97 L 12.861 0.025 L 12.861 22.08 L 6.123 15.005 L 0.056 15.005 L -0.008 7.97 Z" top="0" left="0">
+		<fill>
+			<SolidColor color="0x4d4d4d"/>
+		</fill>
+	</Path>
+</Skin>

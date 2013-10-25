@@ -1,0 +1,25 @@
+Feather Framework es la respuesta a la necesidad de la programación modular y
+reutilización de código en los proyectos Flash Lite.
+
+Una de las cosas que sorprenden desde que salió Flash Lite 2.0 es los pocos
+recursos basados en clases que hay, con lo que esperamos que este proyecto
+ocupe un pequeño espacio en el gran agujero que hay.
+
+Copyright (C) 2008
+Raúl Jiménez
+Marcos González
+
+Este programa es software libre: usted puede redistribuirlo y/o modificarlo
+bajo los términos de la Licencia Pública General GNU publicada
+por la Fundación para el Software Libre, ya sea la versión 3
+de la Licencia, o (a su elección) cualquier versión posterior.
+
+Este programa se distribuye con la esperanza de que sea útil, pero
+SIN GARANTÍA ALGUNA; ni siquiera la garantía implícita
+MERCANTIL o de APTITUD PARA UN PROPÓSITO DETERMINADO.
+Consulte los detalles de la Licencia Pública General GNU para obtener
+una información más detallada.
+
+Debería haber recibido una copia de la Licencia Pública General GNU
+junto a este programa.
+En caso contrario, consulte http://www.gnu.org/licenses/.

@@ -1,0 +1,54 @@
+8
+
+dir
+34
+https://scottjanousek@flashondevices.googlecode.com/svn/trunk/PART%202/chapter6/source/360FlexLite/360FlexLite/classes/com/jxl/threesixtyflex/events
+https://scottjanousek@flashondevices.googlecode.com/svn
+
+
+
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c72519b2-5c6a-11de-b3c1-0fd540ce45e4
+
+GetScheduleByDayEvent.as
+file
+
+
+
+
+2009-08-12T18:54:48.000000Z
+0fbc779409d9753782c200a5bf3c92a7
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+has-props
+
+CheckForUpdateEvent.as
+file
+
+
+
+
+2009-08-12T18:54:48.000000Z
+3b4f2506bf22d8bd8ae297dcb631bfe9
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+has-props
+

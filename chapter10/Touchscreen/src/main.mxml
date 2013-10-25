@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FxApplication xmlns="http://ns.adobe.com/mxml/2009"
+	width="100%" height="100%"
+	initialize="initializeHandler()">
+	
+	<Script>
+		<![CDATA[
+			import com.elad.framework.touchscreen.vo.TouchVO;
+			import com.elad.framework.touchscreen.events.TouchEvent;
+			import com.elad.framework.touchscreen.TouchManager;
+			import mx.collections.ArrayCollection;
+			
+			[Bindable]
+			private var arrayCollection:ArrayCollection = new ArrayCollection;
+			
+			private var touch:TouchManager;
+			
+			protected function initializeHandler():void
+			{
+				touch = new TouchManager(this);
+				touch.addEventListener(TouchEvent.TOUCH_DOWN, onMouseDownHandler);
+				touch.addEventListener(TouchEvent.TOUCH_UP, onMouseUpHandler);
+				touch.addEventListener(TouchEvent.TOUCH_DRAG, onMouseDragHandler);
+				
+				touch.start();
+			}						
+			
+			private function onMouseDownHandler(event:TouchEvent):void
+			{
+				ellipse.visible = true;
+				moveEllipse(event.touchVO.currentX, event.touchVO.currentY);
+				registerLocation(ellipse.x, ellipse.y, "MouseDown", 0);				
+			}	
+			
+			private function onMouseUpHandler(event:TouchEvent):void
+			{
+				ellipse.visible = false;
+			}					
+
+			private function onMouseDragHandler(event:TouchEvent):void
+			{
+					moveEllipse(event.touchVO.currentX, event.touchVO.currentY);
+					registerLocation(ellipse.x, ellipse.y, "MouseMove", event.touchVO.moveTimer);				
+			}
+			
+			private function registerLocation(x:int, y:int, type:String, time:int):void
+			{	
+				arrayCollection.addItem({locationX: ellipse.x, locationY: ellipse.y, type: type, time: time});
+				dg.dataProvider = arrayCollection;
+			}
+			
+			private function moveEllipse(x:int, y:int):void
+			{
+				ellipse.x = x - ellipse.width/2;
+				ellipse.y = y - ellipse.height/2;				
+			}			
+					
+		]]>
+	</Script>
+	
+	<Group>
+		<Ellipse height="80" width="80" id="ellipse" visible="false">
+			<stroke>
+				<SolidColorStroke color="0x000000" weight="2"/>
+			</stroke>
+		</Ellipse>	
+	</Group>
+	
+	<DataGrid x="341" y="4" id="dg" dataProvider="{arrayCollection}" height="410">
+		<columns>
+			<DataGridColumn headerText="X" dataField="locationX"/>
+			<DataGridColumn headerText="Y" dataField="locationY"/>
+			<DataGridColumn headerText="Type" dataField="type"/>
+			<DataGridColumn headerText="Time" dataField="time"/>
+		</columns>
+	</DataGrid>
+		
+</FxApplication>

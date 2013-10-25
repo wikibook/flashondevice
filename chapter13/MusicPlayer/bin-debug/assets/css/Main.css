@@ -1,0 +1,9 @@
+/* CSS file */
+Application {	
+	backgroundColor: #ffffff;
+	backgroundGradientColors: #ffffff, #ffffff;
+	backgroundGradientAlphas: 0, 0; 
+	backgroundColor: #ffffff;
+	horizontalAlign: center;
+	verticalAlign: middle;
+}

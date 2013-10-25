@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Group xmlns="http://ns.adobe.com/mxml/2009" xmlns:ai="http://ns.adobe.com/ai/2008" 
+	xmlns:d="http://ns.adobe.com/fxg/2008/dt" resizeMode="scale">
+	
+	<Path alpha="0" winding="nonZero" ai:knockout="0" d:userLabel="TrackProgressBarSkin" 
+		data="M 241.445 9.251 C 241.445 14.361 241.445 18.503 235.955 18.503 L 5.483 18.503 C 2.451 18.503 -0.005 18.503 -0.005 9.251 L -0.005 9.251 C -0.005 -0.003 2.451 -0.003 5.483 -0.003 L 235.955 -0.003 C 241.445 -0.003 241.445 4.139 241.445 9.251 L 241.445 9.251 Z" top="0" left="0">
+		<fill>
+			<SolidColor color="0xffffff"/>
+		</fill>
+	</Path>
+	
+</Group>

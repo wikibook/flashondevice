@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Group d:userLabel="replayButton" top="0" left="0">
+		<Rect width="31.7935" height="28.9189" ai:knockout="0" top="0.221" left="0">
+			<fill>
+				<SolidColor color="0x191919"/>
+			</fill>
+		</Rect>
+		<Group d:id="13" top="0" left="0">
+			<Path alpha="0.8" winding="nonZero" ai:knockout="0" data="M 13.08 18.817 C 20.655 19.302 26.826 22.277 31.444 28.45 L 31.444 0 L 0 0 L 0 22.939 C 3.783 19.96 8.378 18.516 13.08 18.817 Z" top="0" left="0">
+				<fill>
+					<LinearGradient x="15.457" y="-14.6787" scaleX="43.5553" rotation="89.4181">
+						<GradientEntry color="0xe6e6e6" ratio="0"/>
+						<GradientEntry color="0x1a1a1a" alpha="0.83" ratio="1"/>
+					</LinearGradient>
+				</fill>
+			</Path>
+		</Group>
+		<Path winding="nonZero" ai:knockout="0" data="M -0.001 3.23 L 21.144 3.23 L 21.144 0.016 L 23.094 5.204 L 20.994 10.438 L 20.844 6.791 L -0.001 6.791 L -0.001 3.23 Z" top="4.5" left="4">
+			<fill>
+				<SolidColor color="0xe6e6e6"/>
+			</fill>
+		</Path>
+		<Path winding="nonZero" ai:knockout="0" data="M -0.001 -0.003 L -0.001 9.462 L -0.001 11.402 L 22.191 11.402 L 22.191 8.628 L 3.18 8.588 L 3.136 -0.003" top="11" left="4">
+			<fill>
+				<SolidColor color="0xe6e6e6"/>
+			</fill>
+		</Path>
+	</Group>
+</Skin>

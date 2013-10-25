@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Group d:userLabel="volumeMax" left="0" top="0">
+		<Path winding="nonZero" ai:knockout="0" data="M 0 8.096 L 6.271 8.096 L 13.111 0 L 13.111 22.472 L 6.246 15.263 L 0.065 15.263 L 0 8.096 Z" top="0" left="0">
+			<fill>
+				<SolidColor color="0x4d4d4d"/>
+			</fill>
+		</Path>
+		<Path winding="nonZero" ai:knockout="0" data="M 3.642 8.13 C 3.642 12.61 1.548 15.276 0.199 15.653 C -0.85 15.947 3.31 15.215 3.31 8.13 C 3.31 2.444 0.461 -0.123 0.725 0.019 C 1.836 0.61 3.642 3.651 3.642 8.13 Z" top="3.2" left="14.7">
+			<fill>
+				<SolidColor color="0x4d4d4d"/>
+			</fill>
+		</Path>
+		<Path winding="nonZero" ai:knockout="0" data="M 3.623 8.13 C 3.623 12.61 1.528 15.276 0.179 15.653 C -0.87 15.947 3.29 15.215 3.29 8.13 C 3.29 2.444 0.441 -0.123 0.705 0.019 C 1.816 0.61 3.623 3.651 3.623 8.13 Z" top="3.2" left="16.9">
+			<fill>
+				<SolidColor color="0x4d4d4d"/>
+			</fill>
+		</Path>
+		<Path winding="nonZero" ai:knockout="0" data="M 3.628 8.13 C 3.628 12.61 1.534 15.276 0.185 15.653 C -0.865 15.947 3.296 15.215 3.296 8.13 C 3.296 2.444 0.447 -0.123 0.711 0.019 C 1.821 0.61 3.628 3.651 3.628 8.13 Z" top="3.2" left="18.7">
+			<fill>
+				<SolidColor color="0x4d4d4d"/>
+			</fill>
+		</Path>
+	</Group>
+</Skin>

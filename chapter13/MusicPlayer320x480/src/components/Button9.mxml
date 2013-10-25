@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Group d:userLabel="replayButton" top="0" left="0">
+		<Rect width="42.873" height="38.9971" ai:knockout="0" top="0.299" left="0">
+			<fill>
+				<SolidColor color="0x191919"/>
+			</fill>
+		</Rect>
+		<Group d:id="13" top="0" left="0">
+			<Path alpha="0.8" winding="nonZero" ai:knockout="0" data="M 17.638 25.376 C 27.854 26.029 36.175 30.041 42.401 38.364 L 42.401 0 L 0 0 L 0 30.932 C 5.101 26.917 11.297 24.968 17.638 25.376 Z" top="0" left="0">
+				<fill>
+					<LinearGradient x="20.8423" y="-19.7944" scaleX="58.7341" rotation="89.4181">
+						<GradientEntry color="0xe6e6e6" ratio="0"/>
+						<GradientEntry color="0x1a1a1a" alpha="0.83" ratio="1"/>
+					</LinearGradient>
+				</fill>
+			</Path>
+		</Group>
+		<Path winding="nonZero" ai:knockout="0" data="M -0.007 4.325 L 28.505 4.325 L 28.505 -0.01 L 31.136 6.985 L 28.303 14.045 L 28.101 9.125 L -0.007 9.125 L -0.007 4.325 Z" top="6.1" left="5.4">
+			<fill>
+				<SolidColor color="0xe6e6e6"/>
+			</fill>
+		</Path>
+		<Path winding="nonZero" ai:knockout="0" data="M -0.007 -0.021 L -0.007 12.743 L -0.007 15.359 L 29.918 15.359 L 29.918 11.618 L 4.281 11.565 L 4.223 -0.021" top="14.85" left="5.4">
+			<fill>
+				<SolidColor color="0xe6e6e6"/>
+			</fill>
+		</Path>
+	</Group>
+</Skin>

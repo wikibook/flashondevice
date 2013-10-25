@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:ai="http://ns.adobe.com/ai/2008" 
+	xmlns:d="http://ns.adobe.com/fxg/2008/dt" resizeMode="scale" xmlns:th="http://ns.adobe.com/thermo/2009">
+	<transitions>
+		<Transition fromState="normal" toState="disabled"/>
+		<Transition fromState="disabled" toState="normal"/>
+	</transitions>
+	<states>
+		<State name="normal" th:color="0xcc0000"/>
+		<State name="disabled" th:color="0x0081cc"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxHScrollBar")]</Metadata>
+	<FxButton left="4" top="12" skinClass="com.elad.mp3tunes.view.W320H480.components.Button12" id="track" visible="false"/>
+	<Path winding="nonZero" ai:knockout="0" d:userLabel="timeTrack" 
+		data="M 250.746 14.036 C 250.746 21.511 250.746 27.572 245.058 27.572 L 6.198 27.572 C 3.057 27.572 0.511 27.572 0.511 14.036 L 0.511 14.036 C 0.511 0.499 3.057 0.499 6.198 0.499 L 245.058 0.499 C 250.746 0.499 250.746 6.56 250.746 14.036 L 250.746 14.036 Z" top="7" left="0">
+		<stroke>
+			<SolidColorStroke color="0x898989" caps="none" weight="1" joints="miter" miterLimit="4"/>
+		</stroke>
+	</Path>
+	<FxButton left="94" top="0" skinClass="com.elad.mp3tunes.view.W320H480.components.Button11" id="thumb"/>
+</Skin>

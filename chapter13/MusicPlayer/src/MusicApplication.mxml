@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	backgroundColor="0xe6e6e6"
+	x="0" y="0" 
+	verticalAlign="middle"
+	creationComplete="creationCompleteHandler(event)">
+	
+	<mx:Style source="assets/css/Main.css" />
+	
+	<mx:Script>
+		<![CDATA[
+			import com.elad.mp3tunes.view.presenter.MusicPlayerMainPresenter;
+			import com.elad.mp3tunes.view.AbstractMusicPlayerMain;
+			import com.elad.mp3tunes.view.LoginForm;
+			import mx.managers.PopUpManager;
+			import mx.containers.TitleWindow;
+			import mx.events.FlexEvent;
+		
+			import com.elad.mp3tunes.view.MusicPlayerFactory;
+			import com.elad.mp3tunes.view.AbstractMusicPlayerMain;
+			
+            private var loginForm:LoginForm;
+			private var musicPlayerMainPresenter:MusicPlayerMainPresenter;
+			
+			// handler after creation complete
+			protected function creationCompleteHandler(event:FlexEvent):void
+			{
+				loginForm = LoginForm(PopUpManager.createPopUp(this, LoginForm, true));
+				loginForm.addEventListener(LoginForm.LOGIN_SUCCESSFULL, onLogin);
+			}			
+			
+			// method to load the view
+			protected function loadView(type:Number):void
+			{
+				hBox.visible = false;
+				hBox = null;
+				var musicPlayerView:AbstractMusicPlayerMain = MusicPlayerFactory.createView(type);
+				this.addChild(musicPlayerView);
+				
+				musicPlayerMainPresenter = new MusicPlayerMainPresenter(musicPlayerView);
+			}
+			
+			private function onLogin(event:Event):void
+			{
+				hBox.visible = true;
+			}	
+
+		]]>
+	</mx:Script>
+	
+	<mx:HBox id="hBox" visible="false">
+		<mx:Button label="320x480" click="loadView(MusicPlayerFactory.W320H480)" />
+		<mx:Button label="530x520" click="loadView(MusicPlayerFactory.W530H520)" />
+		<mx:Button label="800x480" click="loadView(MusicPlayerFactory.W800H480)" />
+		<mx:Button label="695x362" click="loadView(MusicPlayerFactory.W695H362)" />
+	</mx:HBox>
+	
+</mx:Application>

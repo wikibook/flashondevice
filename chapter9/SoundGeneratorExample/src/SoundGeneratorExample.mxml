@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/halo"
+					   xmlns:local="com.fusiox.ui.*">
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;
+			
+			private var sound:Sound = new Sound();
+			
+			protected function playSound():void
+			{
+				sound.addEventListener(SampleDataEvent.SAMPLE_DATA, soundGenerator);
+				sound.play();
+			}
+			
+			private function soundGenerator(event:SampleDataEvent):void 
+			{
+				for (var i:int=0; i<2800; i++) 
+				{
+					var random:Number = Math.random();
+					var data:Number = Math.sqrt( (i*random) )*0.01;
+					
+					event.data.writeFloat(data);
+					event.data.writeFloat(data);
+				}
+			} 			
+		]]>
+	</fx:Script>
+		
+		
+	<s:Button label="Play" click="playSound()" /> 
+	<local:Visualization type="wave" bars="32"  width="100%" height="50%"  x="0" y="38"/>
+		
+</s:WindowedApplication>

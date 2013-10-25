@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view:AbstractMusicPlayer xmlns="http://ns.adobe.com/mxml/2009" 
+	xmlns:lib="MusicPlayer_library.*" 
+	xmlns:d="http://ns.adobe.com/fxg/2008/dt" 
+	xmlns:th="http://ns.adobe.com/thermo/2009" 
+	xmlns:ai="http://ns.adobe.com/ai/2008"
+	xmlns:view="com.elad.mp3tunes.view.*"
+	backgroundColor="0xe6e6e6" 
+	width="530" height="520"
+	horizontalScrollPolicy="off" 
+	verticalScrollPolicy="off">
+	
+		<Group d:id="3" d:userLabel="trackInfoBackground" top="30.9" left="9.55">
+			<Group ai:knockout="0" top="0" left="0">
+				<Path winding="nonZero" ai:knockout="0" data="M 506.335 91.07 C 506.335 91.619 505.886 92.07 505.335 92.07 L 0.975 92.07 C 0.425 92.07 -0.025 91.619 -0.025 91.07 L -0.025 0.975 C -0.025 0.425 0.425 -0.025 0.975 -0.025 L 505.335 -0.025 C 505.886 -0.025 506.335 0.425 506.335 0.975 L 506.335 91.07 Z" top="0.375" left="0.375">
+					<fill>
+						<LinearGradient x="252.532" y="94.1411" scaleX="116.959" rotation="-89.227">
+							<GradientEntry color="0x333333" ratio="0"/>
+							<GradientEntry color="0x1a1a1a" ratio="0.429813"/>
+							<GradientEntry ratio="0.807208"/>
+						</LinearGradient>
+					</fill>
+				</Path>
+				<Path winding="nonZero" ai:knockout="0" data="M 506.71 91.445 C 506.71 91.994 506.261 92.445 505.71 92.445 L 1.35 92.445 C 0.8 92.445 0.35 91.994 0.35 91.445 L 0.35 1.35 C 0.35 0.8 0.8 0.35 1.35 0.35 L 505.71 0.35 C 506.261 0.35 506.71 0.8 506.71 1.35 L 506.71 91.445 Z" top="0" left="0">
+					<stroke>
+						<SolidColorStroke caps="none" weight="0.75" joints="miter" miterLimit="4"/>
+					</stroke>
+				</Path>
+			</Group>
+		</Group>
+		
+		<Group d:userLabel="trackInfo" top="48.15" left="39.75">
+			<TextGraphic id="songInfoText" fontFamily="Myriad Pro" fontSize="16.7445" text=""
+				lineHeight="120%" color="0xe6e6e6" whiteSpaceCollapse="preserve" 
+				kerning="on" ai:knockout="0" top="0" left="0" 
+				d:userLabel="songInfoText">
+			</TextGraphic>
+				
+			<TextGraphic id="currentTimeText" fontFamily="Myriad Pro" fontSize="16.7445" lineHeight="120%" 
+				color="0xadacac" whiteSpaceCollapse="preserve" kerning="on" 
+				ai:knockout="0" d:userLabel="currentTimeText" top="40" left="0" text="00:00">
+			</TextGraphic>
+			
+			<TextGraphic id="totalTimeText" fontFamily="Myriad Pro" 
+				fontSize="16.7445" lineHeight="120%" color="0xadacac" 
+				whiteSpaceCollapse="preserve" kerning="on" ai:knockout="0" 
+				d:userLabel="totalTimeText" top="40" left="411" text="00:00">
+			</TextGraphic>				
+		</Group>
+		
+		<FxButton id="playButton" left="52" top="136" skinClass="com.elad.mp3tunes.view.W530H520.components.Button7" buttonMode="true"/>
+		<FxButton id="pauseButton" left="52" top="136" skinClass="com.elad.mp3tunes.view.W530H520.components.PauseButton" buttonMode="true"/>
+		<FxButton id="forwardButton" left="99" top="141" skinClass="com.elad.mp3tunes.view.W530H520.components.Button9" buttonMode="true"/>
+		<FxButton id="rewindButton" left="14" top="141" skinClass="com.elad.mp3tunes.view.W530H520.components.Button8" buttonMode="true"/>
+		<FxButton id="randomButton" left="295" top="144" skinClass="com.elad.mp3tunes.view.W530H520.components.Button10" buttonMode="true"/>
+		<FxButton id="replyButton" left="333" top="144" skinClass="com.elad.mp3tunes.view.W530H520.components.Button11" buttonMode="true"/>
+		<FxButton id="artistsButton" left="379" top="144" skinClass="com.elad.mp3tunes.view.W530H520.components.Button12" label="Artists" buttonMode="true"/>
+		<FxButton id="albumsButton" left="451" top="143" skinClass="com.elad.mp3tunes.view.W530H520.components.Button13" label="Albums" buttonMode="true"/>
+		
+		<Group>
+			<TextGraphic fontFamily="Myriad Pro" fontSize="16" lineHeight="120%" 
+				whiteSpaceCollapse="preserve" kerning="on" ai:knockout="0" d:userLabel="headerLabel" 
+				color="0x000000" top="7.64" left="16">
+				<content><p><span>MP3Tunes Music Player</span></p></content>		
+			</TextGraphic>
+		</Group>
+		
+		<!-- Volume Slider -->
+		<Group>
+			<ProgressBar id="volumeProgressBar"
+				left="170" top="155"
+				barSkin="com.elad.mp3tunes.view.W530H520.components.DownloadProgressBarSkin"
+				trackSkin="com.elad.mp3tunes.view.W530H520.components.VolumeProgressTrackSkin"
+				minimum="0" maximum="100" labelWidth="0"
+				direction="right" mode="manual" />
+						
+			<FxHScrollBar id="volumeSlider"
+				left="152" top="148" value="100" 
+				skinClass="com.elad.mp3tunes.view.W530H520.components.HorizontalScrollbar2"/>
+		</Group>
+		
+		<!-- Track Slider -->
+		<Group>
+			<ProgressBar id="downloadProgressBar"
+				top="93.5" left="88.202" width="350"
+				barSkin="com.elad.mp3tunes.view.W530H520.components.DownloadProgressBarSkin"
+				trackSkin="com.elad.mp3tunes.view.W530H520.components.DownloadProgressTrackSkin"
+				minimum="0" maximum="100" 
+				labelWidth="0"
+				direction="right" mode="manual" />
+	
+			<ProgressBar id="trackProgressBar" alpha="0.5"
+				top="93.5" left="88.202" width="350"
+				barSkin="com.elad.mp3tunes.view.W530H520.components.TrackProgressBarSkin"
+				trackSkin="com.elad.mp3tunes.view.W530H520.components.TrackProgressTrackSkin"
+				minimum="0" maximum="100"
+				labelWidth="0"
+				direction="right" mode="manual" />
+			
+			<FxHScrollBar id="songSlider" left="84" top="85"
+				minimum="0"
+				maximum="250"
+				value="0"
+				skinClass="com.elad.mp3tunes.view.W530H520.components.HorizontalScrollbar1"/>
+		</Group>
+			
+	<Private>
+		<ai:PrivateElement d:ref="#2">
+			<ai:LayerOptions colorType="ThreeColor">
+				<ai:ThreeColor blue="257" green="128.502" red="79.31"/>
+			</ai:LayerOptions>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="a0cbd9ef70d25e429261c58af190cd68" d:ref="#3">
+			<ai:Rect height="92.095" d:userLabel="trackInfoBackground" knockout="0" width="506.36" x="9.352" y="30.499">
+				<ai:Stroke colorType="ThreeColor" miterLimit="4" weight="0.75">
+					<ai:ThreeColor/>
+				</ai:Stroke>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="89.227" gradientType="linear" length="116.991" originX="252.907" originY="94.529">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" midPoint="53.247" rampPoint="0">
+								<ai:ThreeColor blue="0.2" green="0.2" red="0.2"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="80.721">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" isPre="1" major="1" minor="0" name="Adobe Round Corners">
+							<ai:Dictionary>
+								<ai:DictEntry name="radius" value="1" valueType="Real"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+						<ai:LiveEffect index="1" isPre="1" major="1" minor="0" name="Adobe Round Corners">
+							<ai:Dictionary>
+								<ai:DictEntry name="radius" value="3" valueType="Real"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+			</ai:Rect>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="a04301f8b9aca88a1921792ab8ae546a" d:ref="#4">
+			<ai:Path alpha="0.6" data="M 41.338 22.748C 41.338 33.928 0 33.928 0 22.748C 0 11.566 9.254 2.503 20.669 2.503C 32.083 2.503 41.338 11.566 41.338 22.748Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="89.418" gradientType="linear" length="40.644" originX="20.728" originY="14.528">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.4" green="0.4" red="0.4"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="20.859">
+								<ai:ThreeColor blue="0.271" green="0.271" red="0.271"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.93" rampPoint="51.534">
+								<ai:ThreeColor blue="0.047" green="0.047" red="0.047"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="57.669">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="78.528">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="99.386">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="14fdabfc840c9a56ea8be3dd6b847257" d:ref="#5">
+			<ai:Path data="M 16.073 14.725L 16.073 29.74L 31.45 22.232L 16.073 14.725Z" knockout="0">
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" major="1" minor="0" name="Adobe Drop Shadow">
+							<ai:Dictionary>
+								<ai:DictEntry name="horz" value="1" valueType="Real"/>
+								<ai:DictEntry name="blnd" value="0" valueType="Integer"/>
+								<ai:DictEntry name="pair" value="1" valueType="Boolean"/>
+								<ai:DictEntry name="dark" value="100" valueType="Real"/>
+								<ai:DictEntry name="vert" value="1" valueType="Real"/>
+								<ai:DictEntry name="csrc" value="0" valueType="Integer"/>
+								<ai:DictEntry name="sclr" valueType="FillStyle">
+									<ai:Fill colorType="ThreeColor">
+										<ai:ThreeColor/>
+									</ai:Fill>
+								</ai:DictEntry>
+								<ai:DictEntry name="opac" value="0.15" valueType="Real"/>
+								<ai:DictEntry name="blur" value="5" valueType="Real"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+				<ai:Fill colorType="ThreeColor">
+					<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="2b29869a538ca4d3a7596bb0aba53234" d:ref="#6">
+			<ai:Path alpha="0.6" data="M 39.422 20.058C 39.422 29.447 5.934 29.447 5.934 20.058C 5.934 10.668 13.431 3.057 22.678 3.057C 31.925 3.057 39.422 10.668 39.422 20.058Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="89.418" gradientType="linear" length="34.132" originX="16.793" originY="12.201">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.4" green="0.4" red="0.4"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="20.859">
+								<ai:ThreeColor blue="0.271" green="0.271" red="0.271"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.93" rampPoint="51.534">
+								<ai:ThreeColor blue="0.047" green="0.047" red="0.047"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="57.669">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="78.528">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="99.386">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="0830d0865703850fb260d429e0c6a7be" d:ref="#7">
+			<ai:Path data="M 24.335 14.559L 24.335 25.254L 33.682 19.905L 24.335 14.559Z" knockout="0">
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" major="1" minor="0" name="Adobe Drop Shadow">
+							<ai:Dictionary>
+								<ai:DictEntry name="horz" value="1" valueType="Real"/>
+								<ai:DictEntry name="blnd" value="0" valueType="Integer"/>
+								<ai:DictEntry name="pair" value="1" valueType="Boolean"/>
+								<ai:DictEntry name="dark" value="100" valueType="Real"/>
+								<ai:DictEntry name="vert" value="1" valueType="Real"/>
+								<ai:DictEntry name="csrc" value="0" valueType="Integer"/>
+								<ai:DictEntry name="sclr" valueType="FillStyle">
+									<ai:Fill colorType="ThreeColor">
+										<ai:ThreeColor/>
+									</ai:Fill>
+								</ai:DictEntry>
+								<ai:DictEntry name="opac" value="0.15" valueType="Real"/>
+								<ai:DictEntry name="blur" value="5" valueType="Real"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+				<ai:Fill colorType="ThreeColor">
+					<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="0830d0865703850fb260d429e0c6a7be" d:ref="#8">
+			<ai:Path data="M 14.989 14.559L 14.989 25.254L 24.335 19.905L 14.989 14.559Z" knockout="0">
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" major="1" minor="0" name="Adobe Drop Shadow">
+							<ai:Dictionary>
+								<ai:DictEntry name="horz" value="1" valueType="Real"/>
+								<ai:DictEntry name="blnd" value="0" valueType="Integer"/>
+								<ai:DictEntry name="pair" value="1" valueType="Boolean"/>
+								<ai:DictEntry name="dark" value="100" valueType="Real"/>
+								<ai:DictEntry name="vert" value="1" valueType="Real"/>
+								<ai:DictEntry name="csrc" value="0" valueType="Integer"/>
+								<ai:DictEntry name="sclr" valueType="FillStyle">
+									<ai:Fill colorType="ThreeColor">
+										<ai:ThreeColor/>
+									</ai:Fill>
+								</ai:DictEntry>
+								<ai:DictEntry name="opac" value="0.15" valueType="Real"/>
+								<ai:DictEntry name="blur" value="5" valueType="Real"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+				<ai:Fill colorType="ThreeColor">
+					<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="880e3a2a130bd690d0ee33b7e8b12a02" d:ref="#9">
+			<ai:Path alpha="0.6" data="M 41.956 20.417C 41.956 29.806 8.467 29.806 8.467 20.417C 8.467 11.027 15.964 3.416 25.211 3.416C 34.458 3.416 41.956 11.027 41.956 20.417Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="89.418" gradientType="linear" length="34.132" originX="16.793" originY="12.201">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.4" green="0.4" red="0.4"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="20.859">
+								<ai:ThreeColor blue="0.271" green="0.271" red="0.271"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.93" rampPoint="51.534">
+								<ai:ThreeColor blue="0.047" green="0.047" red="0.047"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="57.669">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="78.528">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="99.386">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="d72e066c212823dbe50281e8de91e7e2" d:ref="#10">
+			<ai:Path data="M 23.466 25.254L 23.466 14.56L 14.12 19.909L 23.466 25.254Z" knockout="0">
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" major="1" minor="0" name="Adobe Drop Shadow">
+							<ai:Dictionary>
+								<ai:DictEntry name="horz" value="1" valueType="Real"/>
+								<ai:DictEntry name="blnd" value="0" valueType="Integer"/>
+								<ai:DictEntry name="pair" value="1" valueType="Boolean"/>
+								<ai:DictEntry name="dark" value="100" valueType="Real"/>
+								<ai:DictEntry name="vert" value="1" valueType="Real"/>
+								<ai:DictEntry name="csrc" value="0" valueType="Integer"/>
+								<ai:DictEntry name="sclr" valueType="FillStyle">
+									<ai:Fill colorType="ThreeColor">
+										<ai:ThreeColor/>
+									</ai:Fill>
+								</ai:DictEntry>
+								<ai:DictEntry name="opac" value="0.15" valueType="Real"/>
+								<ai:DictEntry name="blur" value="5" valueType="Real"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+				<ai:Fill colorType="ThreeColor">
+					<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="d72e066c212823dbe50281e8de91e7e2" d:ref="#11">
+			<ai:Path data="M 32.812 25.254L 32.812 14.56L 23.466 19.909L 32.812 25.254Z" knockout="0">
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" major="1" minor="0" name="Adobe Drop Shadow">
+							<ai:Dictionary>
+								<ai:DictEntry name="horz" value="1" valueType="Real"/>
+								<ai:DictEntry name="blnd" value="0" valueType="Integer"/>
+								<ai:DictEntry name="pair" value="1" valueType="Boolean"/>
+								<ai:DictEntry name="dark" value="100" valueType="Real"/>
+								<ai:DictEntry name="vert" value="1" valueType="Real"/>
+								<ai:DictEntry name="csrc" value="0" valueType="Integer"/>
+								<ai:DictEntry name="sclr" valueType="FillStyle">
+									<ai:Fill colorType="ThreeColor">
+										<ai:ThreeColor/>
+									</ai:Fill>
+								</ai:DictEntry>
+								<ai:DictEntry name="opac" value="0.15" valueType="Real"/>
+								<ai:DictEntry name="blur" value="5" valueType="Real"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+				<ai:Fill colorType="ThreeColor">
+					<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="554364df28b1813f05345c6191c745fd" d:ref="#12">
+			<ai:Path alpha="0.8" data="M 13.08 18.818C 20.656 19.303 26.827 22.278 31.444 28.45L 31.444 0L 0 0L 0 22.939C 3.782 19.961 8.378 18.516 13.08 18.818Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="-89.418" gradientType="linear" length="43.556" originX="15.457" originY="-14.68">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="100">
+								<ai:ThreeColor blue="0.102" green="0.102" red="0.102"/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="71753b454d636f5f1b5094f9d92f5c20" d:ref="#13">
+			<ai:Path alpha="0.8" data="M 13.08 18.817C 20.655 19.302 26.826 22.277 31.444 28.45L 31.444 0L 0 0L 0 22.938C 3.783 19.96 8.378 18.516 13.08 18.817Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="-89.418" gradientType="linear" length="43.555" originX="15.457" originY="-14.679">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="100">
+								<ai:ThreeColor blue="0.102" green="0.102" red="0.102"/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="c6ef1f799d1d8ac4074699a4c93b18f7" d:ref="#14">
+			<ai:Path alpha="0.8" data="M 26.777 18.818C 42.285 19.303 54.917 22.278 64.373 28.45L 64.373 0L 0 0L 0 22.94C 7.743 19.961 17.152 18.516 26.777 18.818Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="-89.418" gradientType="linear" length="44.062" originX="31.917" originY="-15.016">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="100">
+								<ai:ThreeColor blue="0.102" green="0.102" red="0.102"/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="7c48115ad3f95cb9ec498e5d02b5f31b" d:ref="#15">
+			<ai:Path alpha="0.8" data="M 26.777 18.818C 42.285 19.303 54.918 22.278 64.371 28.45L 64.371 0L 0 0L 0 22.939C 7.742 19.961 17.152 18.516 26.777 18.818Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="-89.418" gradientType="linear" length="44.062" originX="31.916" originY="-15.016">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="100">
+								<ai:ThreeColor blue="0.102" green="0.102" red="0.102"/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+	</Private>
+
+</view:AbstractMusicPlayer>

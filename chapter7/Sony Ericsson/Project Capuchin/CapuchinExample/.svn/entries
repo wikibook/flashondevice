@@ -1,0 +1,114 @@
+8
+
+dir
+34
+https://scottjanousek@flashondevices.googlecode.com/svn/trunk/PART%202/chapter7/Sony%20Ericsson/Project%20Capuchin/CapuchinExample
+https://scottjanousek@flashondevices.googlecode.com/svn
+
+
+
+2009-08-12T17:41:27.598586Z
+33
+scottjanousek
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c72519b2-5c6a-11de-b3c1-0fd540ce45e4
+
+.classpath
+file
+
+
+
+
+2009-08-12T18:55:04.000000Z
+6cc0f01afed3bfaecd515495f38790eb
+2009-08-12T17:41:27.598586Z
+33
+scottjanousek
+has-props
+
+.eclipseme.tmp
+dir
+
+.eclipseme
+file
+
+
+
+
+2009-08-12T18:55:04.000000Z
+050215b8ee7195bad7246f1745750a05
+2009-08-12T17:41:27.598586Z
+33
+scottjanousek
+has-props
+
+.project
+file
+
+
+
+
+2009-08-12T18:55:05.000000Z
+01cfef58c0b218bcb715c016a4a01568
+2009-08-12T17:41:27.598586Z
+33
+scottjanousek
+has-props
+
+CapuchinExample.swf
+file
+
+
+
+
+2009-08-12T18:55:05.000000Z
+252b17b92e07699a13c92090e1d1e84d
+2009-08-12T17:41:27.598586Z
+33
+scottjanousek
+has-props
+
+deployed
+dir
+
+src
+dir
+
+CapuchinExample.fla
+file
+
+
+
+
+2009-08-12T18:55:05.000000Z
+f54ca07c90884b59b1b1ff32c3725c3f
+2009-08-12T17:41:27.598586Z
+33
+scottjanousek
+has-props
+
+bin
+dir
+
+res
+dir
+
+.settings
+dir
+
+com
+dir
+

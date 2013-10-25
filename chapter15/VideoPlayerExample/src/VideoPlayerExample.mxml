@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/halo" 
+	minWidth="1024" minHeight="768" 
+	creationComplete="creationCompleteHandler(event)">
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;
+			import com.elad.CustomStreamClient;
+			
+	        private var videoURL:String = "videofile_H264.mp4";
+	        private var connection:NetConnection;
+	        private var netStream:NetStream;
+	        
+			protected function creationCompleteHandler(event:FlexEvent):void
+			{
+	            connection = new NetConnection();
+	            connection.addEventListener(NetStatusEvent.NET_STATUS, netStatusHandler);
+	            connection.addEventListener(SecurityErrorEvent.SECURITY_ERROR, securityErrorHandler);
+	            connection.connect(null);
+			}
+			
+	        private function setNetStream():void 
+	        {
+	            netStream = new NetStream(connection);
+	            netStream.addEventListener(NetStatusEvent.NET_STATUS, netStatusHandler);
+	            netStream.addEventListener(IOErrorEvent.IO_ERROR, onNetworkError);
+	            netStream.client = new CustomStreamClient();
+	            
+	            var video:Video = new Video();
+	            video.attachNetStream(netStream);
+	            
+	            netStream.play(videoURL);
+	            netStream.seek(0.01);
+	            netStream.pause();
+	            
+	            component.addChild(video);
+	        }
+	        
+	        /***********************************************************
+	        * 
+	        *  Handlers
+	        * 
+	        * **********************************************************/
+	
+	        private function netStatusHandler(event:NetStatusEvent):void 
+	        {
+	            switch (event.info.code) 
+	            {	                            	
+	                case "NetConnection.Connect.Success":
+	                {
+	                    playButton.enabled = true;
+	                    this.setNetStream();
+	                    break;
+	                }
+	                case "NetStream.Play.StreamNotFound":
+	                {
+	                    trace("StreamNotFound: " + videoURL);
+	                    break;
+	                }
+	                case "NetStream.Buffer.Full":
+	                {
+	                	trace("bufferLength:"+netStream.bufferLength);
+	                    break;
+	                }
+	                case "NetStream.Buffer.Flush":
+	                {
+	                	trace(event.info.code);
+	                	break;
+	                }
+	                case "NetStream.Seek.Notify":
+	                {
+	                	trace(event.info.code);
+	                	break;
+	                }
+	                case "NetStream.Buffer.Empty":
+	                {
+	                    trace(event.info.code);
+	                    break;
+		            }
+	            }
+	        }
+	
+	        private function securityErrorHandler(event:SecurityErrorEvent):void 
+	        {
+	            trace( "securityError: " + event.toString() );
+	        }
+	        
+			private function onNetworkError(event:IOErrorEvent):void 
+	        {
+	            trace( "NetworkError: " + event.toString() );
+	        }	                
+
+
+		]]>
+	</fx:Script>
+	
+	<s:HGroup>
+		<mx:UIComponent id="component" width="200" height="240" />
+		<s:Button id="playButton" label="Play" click="netStream.resume()" enabled="false" />		
+	</s:HGroup>
+	
+</s:Application>

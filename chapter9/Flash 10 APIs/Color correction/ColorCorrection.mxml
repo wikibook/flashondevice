@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowedApplication xmlns="http://ns.adobe.com/mxml/2009">
+	
+	<Script>
+		<![CDATA[
+	
+			private function isColorCorrectionSupport():Boolean 
+			{
+				var retVal:Boolean;
+				
+				if (stage.colorCorrectionSupport == ColorCorrectionSupport.DEFAULT_ON || 
+					stage.colorCorrectionSupport == ColorCorrectionSupport.DEFAULT_OFF) 
+				{
+				   retVal = true;
+				} 
+				else 
+				{
+				   retVal = false;
+				}
+				
+				return retVal;
+			}
+	
+			
+			private function colorCorrection(value:Boolean):void
+			{
+				if (value == false)
+					stage.colorCorrection = ColorCorrection.OFF;
+				else
+					stage.colorCorrection = ColorCorrection.ON;
+			}
+			
+			protected function changeHandler(event:Event):void
+			{
+				var selected:Boolean = FxCheckBox(event.target).selected;
+				colorCorrection(selected);
+			}
+	
+		]]>
+	</Script>
+
+	<Image source="img.jpg" width="319" height="240" />
+	
+	<FxCheckBox change="changeHandler(event)" />
+	<Label text="Color Correction" />	
+	
+</WindowedApplication>

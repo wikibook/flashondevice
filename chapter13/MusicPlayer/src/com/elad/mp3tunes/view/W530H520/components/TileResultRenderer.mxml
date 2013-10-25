@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VBox xmlns="http://ns.adobe.com/mxml/2009" 
+    horizontalAlign="center"
+    verticalGap="0" borderStyle="none">
+
+    <Image id="image" width="60" height="60" source="assets/images/note.gif"/>
+    <Label text="{data.name}" width="120" textAlign="center"/>
+    <Label text="{data.count} song" fontWeight="bold"/>
+	
+</VBox>

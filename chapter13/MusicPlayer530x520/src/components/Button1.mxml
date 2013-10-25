@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Group d:userLabel="timeThumb" left="0" top="0">
+		<Ellipse width="25.1172" height="24.0703" ai:knockout="0" top="0" left="0">
+			<fill>
+				<SolidColor/>
+			</fill>
+			<stroke>
+				<SolidColorStroke color="0x898989" caps="none" weight="1" joints="miter" miterLimit="4"/>
+			</stroke>
+		</Ellipse>
+		<Ellipse width="10.1958" height="10.7559" ai:knockout="0" top="7.302" left="7.961">
+			<fill>
+				<SolidColor color="0xffffff"/>
+			</fill>
+		</Ellipse>
+	</Group>
+</Skin>

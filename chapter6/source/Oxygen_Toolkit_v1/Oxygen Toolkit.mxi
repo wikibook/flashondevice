@@ -1,0 +1,58 @@
+<macromedia-extension
+	name="Oxygen - The Flash Lite Developer's Toolkit"
+	version="1.0"
+	type="Component">
+
+	<!-- List the required/compatible products -->
+
+	<products>
+		<product name="Flash" version="8" primary="true" />
+	</products>
+
+	<!-- Describe the author -->
+
+	<author name="Faisal Iqbal (www.orison.biz/blogs/chall3ng3r/)" />
+
+	<!-- Describe the extension -->
+
+	<description>
+
+	<![CDATA[
+	Oxygen - The Flash Lite Developers Toolkit is a set of free components and libraries for use in Flash Lite based applications. The Oxygen Toolkit includes debug tools as well as components to be used in applications.<br><br>
+
+	In this initial release of the toolkit, following components are available including full source code.<br><br>
+	- FPS-Meter v3<br>
+	- Mem-Meter v1<br>
+	- Battery Meter v1<br>
+	- Signal Meter v1<br>
+	<br>
+	Using Oxygen Toolkit:<br>
+	Just drag the required component from Oxygen Toolkit Common Library onto the stage and start the movie. <br><br>
+	Remeber to use correct version of Oxygen Toolkit Components for your Flash Lite 1.1 and Flash Lite 2.x and 3.0 applications.
+	]]>
+	</description>
+
+	<!-- Describe the third-party license agreement -->
+
+	<license-agreement>
+	<![CDATA[]]>
+	</license-agreement>
+
+	<!-- Describe where the extension shows in the UI of the product -->
+
+	<ui-access>
+	<![CDATA[
+	To access Oxygen Toolkit Components go to:<br>
+	- Flash 8 Pro goto: Window -> Common Libraries -> Oxygen Toolkit<br>
+	- Flash CS3 Pro goto: Window -> Common Libraries -> Oxygen Toolkit<br>
+	<br>
+	]]>
+	</ui-access>
+
+	<!-- Describe the files that comprise the extension -->
+
+	<files>
+		<file name="Oxygen Toolkit - Flash Lite 1.1.fla" destination="$flash/Libraries" />
+		<file name="Oxygen Toolkit - Flash Lite 2-3.fla" destination="$flash/Libraries" />
+	</files>
+</macromedia-extension>

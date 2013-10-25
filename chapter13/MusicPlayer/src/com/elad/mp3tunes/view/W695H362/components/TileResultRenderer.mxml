@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+    horizontalAlign="center"
+    verticalGap="0" borderStyle="none" 
+    height="152" width="181">
+
+    <mx:Label text="{data.name}" width="120" textAlign="center"/>
+    <mx:Label text="{data.count} song" fontWeight="bold"/>
+    <mx:Image source="assets/images/note.gif" 
+    	scaleContent="true" 
+    	autoLoad="true" width="50%" height="50%"/>
+	
+</mx:VBox>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowedApplication xmlns="http://ns.adobe.com/mxml/2009"
+  layout="absolute"
+  creationComplete="loadFile();">
+  
+	<Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			
+			private var fileReference:FileReference;
+			private static const FILE_TYPES:Array = [new FileFilter("Text File Format", "*.txt;*.text")];
+
+			private function loadFile():void
+			{
+				fileReference = new FileReference();
+				
+				fileReference.addEventListener(Event.SELECT, fileSelectEventHandler);
+				fileReference.addEventListener(Event.CANCEL,function():void { Alert.show("Cancel") } );
+				
+				fileReference.browse(FILE_TYPES);				
+			}
+
+
+			private function fileSelectEventHandler(event:Event):void
+			{
+				fileReference.addEventListener(Event.COMPLETE, loadCompleteEventHandler);
+				fileReference.addEventListener(IOErrorEvent.IO_ERROR, function():void { Alert.show("Error uploading file") });
+
+				fileReference.load();
+			}
+			
+			private function loadCompleteEventHandler(event:Event):void
+			{
+				var data:ByteArray = fileReference.data;
+				output.text = data.readUTFBytes(data.bytesAvailable);
+
+				fileReference = null;
+			}
+					
+		]]>
+	</Script>
+	
+	<TextArea id="output" />
+  
+</WindowedApplication>
+

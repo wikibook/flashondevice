@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionScriptProperties mainApplicationPath="MusicApplication.mxml" projectUUID="efc180c3-40fe-4d24-be9c-654a5596805d" version="4">
+<compiler additionalCompilerArguments="-locale=en_US -allow-source-path-overlap=true -use-network=false" copyDependentFiles="true" enableModuleDebug="true" flexSDK="Flex 4.0" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" sourceFolderPath="src" strict="true" targetPlayerVersion="10.0.12" themeIsDefault="false" themeIsSDK="true" themeLocation="/Applications/Adobe Gumbo MAX Preview/sdks/4.0.0/frameworks/themes/Wireframe" themeMain="wireframe.swc" themeMaxSDK="" themeMinSDK="2.0.1" themeName="Wireframe" themePath="Wireframe" useApolloConfig="false" verifyDigests="true" warn="true">
+<themePath>Wireframe</themePath>
+<compilerSourcePath/>
+<libraryPath defaultLinkType="1">
+<libraryPathEntry kind="4" path=""/>
+<libraryPathEntry kind="1" linkType="1" path="libs"/>
+</libraryPath>
+<sourceAttachmentPath/>
+</compiler>
+<applications>
+<application path="MusicApplication.mxml"/>
+</applications>
+<modules/>
+<buildCSSFiles/>
+</actionScriptProperties>

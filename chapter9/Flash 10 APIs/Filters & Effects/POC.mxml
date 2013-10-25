@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowedApplication xmlns="http://ns.adobe.com/mxml/2009">
+	
+ 	<Image source="img.jpg" width="800" height="600"> 
+          <filters>  
+               <ShaderFilter id="shaderFilter" radius="300"
+               	byteCode="@Embed(source='TubeView.pbj',mimeType='application/octet-stream')"  
+               />  
+          </filters>  
+     </Image>	
+	
+</WindowedApplication>

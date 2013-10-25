@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	layout="absolute" 
+	xmlns:business="com.elad.application.business.*"
+	xmlns:control="com.elad.application.control.*"
+	xmlns:view="com.elad.application.view.*"
+	preinitialize="modelLocator.mainPM.preinitialize()">
+	
+	<mx:Script>
+		<![CDATA[
+			
+			import com.elad.application.model.ModelLocator;
+			
+			[Bindable]
+			private var modelLocator:ModelLocator = ModelLocator.getInstance();
+
+					
+		]]>
+	</mx:Script>
+	
+	<mx:Style source="assets/main.css" />
+			
+	<control:testController />
+	<business:Services />
+	
+	<view:FeedsPanelViewer feedsPanelViewer="{modelLocator.feedsPanelViewerPM}"/>
+	
+</mx:Application>

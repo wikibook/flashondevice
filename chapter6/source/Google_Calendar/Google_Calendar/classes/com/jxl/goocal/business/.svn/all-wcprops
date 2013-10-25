@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/business
+END
+CreateEventDelegate.as
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/business/CreateEventDelegate.as
+END
+EditEventDelegate.as
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/business/EditEventDelegate.as
+END
+LoginDelegate.as
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/business/LoginDelegate.as
+END
+CheckForUpdatesDelegate.as
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/business/CheckForUpdatesDelegate.as
+END
+GetCalendarsDelegate.as
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/business/GetCalendarsDelegate.as
+END
+GetCalendarEventsDelegate.as
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/business/GetCalendarEventsDelegate.as
+END
+GetEntryDelegate.as
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/business/GetEntryDelegate.as
+END

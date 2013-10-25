@@ -1,0 +1,67 @@
+/* CSS file */
+.playButton {
+	upSkin: Embed(source="../images/skin.swf#playButton");
+	downSkin: Embed(source="../images/skin.swf#playButton");
+	overSkin: Embed(source="../images/skin.swf#playButton");
+}
+
+.albumsButton {
+	upSkin: Embed(source="../images/skin.swf#albumsButton");
+	downSkin: Embed(source="../images/skin.swf#albumsButton");
+	overSkin: Embed(source="../images/skin.swf#albumsButton");
+}
+
+.artistsButton {
+	upSkin: Embed(source="../images/skin.swf#artistsButton");
+	downSkin: Embed(source="../images/skin.swf#artistsButton");
+	overSkin: Embed(source="../images/skin.swf#artistsButton");
+}
+
+.forwardButton {
+	upSkin: Embed(source="../images/skin.swf#forwardButton");
+	downSkin: Embed(source="../images/skin.swf#forwardButton");
+	overSkin: Embed(source="../images/skin.swf#forwardButton");
+}
+
+.pauseButton {
+	upSkin: Embed(source="../images/skin.swf#pauseButton");
+	downSkin: Embed(source="../images/skin.swf#pauseButton");
+	overSkin: Embed(source="../images/skin.swf#pauseButton");
+}
+
+.randomButton {
+	upSkin: Embed(source="../images/skin.swf#randomButton");
+	downSkin: Embed(source="../images/skin.swf#randomButton");
+	overSkin: Embed(source="../images/skin.swf#randomButton");
+}
+
+.replayButton {
+	upSkin: Embed(source="../images/skin.swf#replayButton");
+	downSkin: Embed(source="../images/skin.swf#replayButton");
+	overSkin: Embed(source="../images/skin.swf#replayButton");
+}
+
+.rewindButton {
+	upSkin: Embed(source="../images/skin.swf#rewindButton");
+	downSkin: Embed(source="../images/skin.swf#rewindButton");
+	overSkin: Embed(source="../images/skin.swf#rewindButton");
+}
+
+.trackSliderBackground {
+	background-image: Embed(source="../images/skin.swf#trackSliderBackground");
+}
+
+.trackThumbSkin {
+	thumbSkin: Embed(source="../images/skin.swf#trackThumbSkin");
+	trackSkin: Embed(source="../images/skin.swf#trackSkin");
+}
+
+.downloadProgressBarSkin {
+	barSkin: Embed(source="../images/skin.swf#downloadProgressBarSkin");
+	trackSkin: Embed(source="../images/skin.swf#emptyTrackSkin");	
+}
+
+.trackProgressBarSkin {
+	barSkin: Embed(source="../images/skin.swf#trackProgressBarSkin");
+	trackSkin: Embed(source="../images/skin.swf#emptyTrackSkin");	
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowedApplication xmlns="http://ns.adobe.com/mxml/2009" 
+	width="320" height="495"
+	layout="absolute" xmlns:local="*"
+	color="0x020303"
+	backgroundColor="0x020303"
+	horizontalScrollPolicy="off" verticalScrollPolicy="off">
+	
+	<local:SearchVideo id="videos" />
+	
+</WindowedApplication>

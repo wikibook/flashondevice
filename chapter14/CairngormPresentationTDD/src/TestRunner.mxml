@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:flexunit="flexunit.flexui.*"
+	xmlns:business="com.elad.application.business.*"
+	xmlns:control="com.elad.application.control.*"	
+	creationComplete="onCreationComplete()">
+	
+	<mx:Script>
+		<![CDATA[
+			import flexUnitTests.GesturesTestSuite;
+		
+			import flexUnitTests.events.ReadAdobeFeedsTestCase;
+			import flexUnitTests.events.UserSelectedFeedTestCase;
+			import flexunit.framework.TestSuite;
+			
+			private function onCreationComplete():void
+			{
+				testRunner.test = currentRunTestSuite(); 
+				testRunner.startTest();
+			}
+			
+			public function currentRunTestSuite():TestSuite
+			{
+				var testsToRun:TestSuite = new TestSuite();
+				
+				testsToRun.addTest(GesturesTestSuite.suite());
+				testsToRun.addTest(new UserSelectedFeedTestCase("testUserSelectedFeedEvent"));
+				testsToRun.addTest(new ReadAdobeFeedsTestCase("testReadAdobeFeedsEvent"));
+				return testsToRun;
+			}			
+						
+		]]>
+	</mx:Script>
+
+	<control:testController />
+	<business:Services />	
+	<flexunit:TestRunnerBase id="testRunner"/>
+	
+</mx:Application>

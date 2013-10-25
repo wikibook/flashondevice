@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<days>
+
+	<day name="Monday">
+		
+		<event name="Keynote" start="8:30" end="9:50" track="all" />
+		<event name="Lunch" start="11:30" end="12:30" track="all" />
+		
+		<event name="Flex ABC123" speaker="Ted Patrick" start="10:00" end="11:20" track="Flex 101" />
+		<event name="Components and Containers" speaker="John Wilker" start="13:00" end="14:20" track="Flex 101" />
+		<event name="Data Exchange" speaker="John Wilker, Tom Ortega" start="14:30" end="15:50" track="Flex 101" />
+		<event name="Effects, States, CSS, Skinning" speaker="Ben Lucyk" start="16:00" end="17:20" track="Flex 101" />
+		
+		<event name="AS3 Design Patterns" speaker="Danny Patterson" start="10:00" end="11:20" track="Application" />
+		<event name="Flex Builder Secrets" speaker="David Zuckerman" start="13:00" end="14:20" track="Application" />
+		<event name="Building Apollo Apps" speaker="Mike Chambers" start="14:30" end="15:50" track="Application" />
+		<event name="Cairngorm Framework" speaker="Tom Ortega" start="16:00" end="17:20" track="Application" />
+		
+		<event name="Apollo APIs" speaker="Christian Cantrell" start="10:00" end="11:20" track="Component" />
+		<event name="Flex loves Flash?  Embed and Beyond!" speaker="Grant Skinner" start="13:00" end="14:20" track="Component" />
+		<event name="Component Based Development in Flex" speaker="Chafic Kazoun" start="14:30" end="15:50" track="Component" />
+		<event name="Yahoo! AS3 and Flex 2 Libraries - Part 1" speaker="Yahoo! Flash Platform Team" start="16:00" end="17:20" track="Component" />
+		
+		<event name="5 Minute CRUD with FDS" speaker="Kevin Hoyt" start="10:00" end="11:20" track="Integration" />
+		<event name="ByteArray 101" speaker="Ben Stucki" start="13:00" end="14:20" track="Integration" />
+		<event name="E4X" speaker="Danny Patterson" start="14:30" end="15:50" track="Integration" />
+		<event name="Flex Apps Faster with WebOrb" speaker="Mark Piller" start="16:00" end="17:20" track="Integration" />
+		
+	</day>
+	
+	<day name="Tuesday">
+	
+		<event name="Lunch" start="11:30" end="12:30" track="all" />
+		
+		<event name="Flex ABC123" speaker="Ted Patrick" start="8:30" end="9:50" track="Flex 101" />
+		<event name="Components and Containers" speaker="John Wilker" start="10:00" end="11:20" track="Flex 101" />
+		<event name="Data Exchange" speaker="John Wilker, Tom Ortega" start="13:00" end="14:20" track="Flex 101" />
+		<event name="Effects, States, CSS, Skinning" speaker="Ben Lucyk" start="14:30" end="15:50" track="Flex 101" />
+		<event name="Flex Questions" speaker="John, Ted, Tom, Team" start="16:00" end="17:20" track="Flex 101" />
+		
+		<event name="Enterprise Apps" speaker="Anatole Tartakovsky" start="8:30" end="9:50" track="Application" />
+		<event name="Flex Builder Secrets" speaker="David Zuckerman" start="10:00" end="11:20" track="Application" />
+		<event name="Flex Debugger" speaker="Mike Morearty" start="13:00" end="14:20" track="Application" />
+		<event name="Flex Framework" speaker="Deepa Subramaniam" start="14:30" end="15:50" track="Application" />
+		<event name="Automating Flex with ANT" speaker="TBA" start="16:00" end="17:20" track="Application" />
+		
+		<event name="Yahoo! AS3 and Flex 2 Libraries - Part 2" speaker="Yahoo! Flash Platform Team" start="8:30" end="9:50" track="Component" />
+		<event name="Modules" speaker="Roger Gonzalez" start="10:00" end="11:20" track="Component" />
+		<event name="MXML vs. AS3" speaker="Ted Patrick" start="13:00" end="14:20" track="Component" />
+		<event name="Making Components" speaker="Ely Greenfield" start="14:30" end="15:50" track="Component" />
+		<event name="Flex and Flash Together" speaker="Jesse Warden" start="16:00" end="17:20" track="Component" />
+		
+		<event name="Flex Data Services" speaker="Jason Williams" start="8:30" end="9:50" track="Integration" />
+		<event name="Flex with .NET" speaker="Harris Reynolds" start="10:00" end="11:20" track="Integration" />
+		<event name="5 Minute CRUD with FDS" speaker="Kevin Hoyt" start="13:00" end="14:20" track="Integration" />
+		<event name="E4X" speaker="Danny Patterson" start="14:30" end="15:50" track="Integration" />
+		<event name="Flex with ColdFusion" speaker="Ben Forta" start="16:00" end="17:20" track="Integration" />
+		
+	</day>
+	
+	<day name="Wednesday">
+
+		<event name="Keynote" start="8:30" end="9:50" track="all" />
+		<event name="Lunch" start="11:30" end="12:30" track="all" />
+		
+		
+		<event name="Flex ABC123" speaker="Ted Patrick" start="10:00" end="11:20" track="Flex 101" />
+		<event name="Components and Containers" speaker="John Wilker" start="13:00" end="14:20" track="Flex 101" />
+		<event name="Date Exchange" start="14:30" end="15:50" track="Flex 101" />
+		<event name="Effects, States, CSS, Skinning" speaker="Ben Lucyk" start="16:00" end="17:20" track="Flex 101" />
+		
+		<event name="Building Apollo Apps" speaker="Mike Chambers" start="10:00" end="11:20" track="Application" />
+		<event name="Flex Builder Secrets" speaker="David Zuckerman" start="13:00" end="14:20" track="Application" />
+		<event name="Flex Framework" speaker="Deepa Subramaniam" start="14:30" end="15:50" track="Application" />
+		<event name="AS3 Performance Tuning" speaker="Ted Patrick" start="16:00" end="17:20" track="Application" />
+		
+		<event name="Mapping Components" speaker="Mansour Raad" start="10:00" end="11:20" track="Component" />
+		<event name="Skinning Flex Components" speaker="Clint Modien" start="13:00" end="14:20" track="Component" />
+		<event name="Apollo APIs" speaker="Christian Cantrell" start="14:30" end="15:50" track="Component" />
+		<event name="Making Components" speaker="Ely Greenfield" start="16:00" end="17:20" track="Component" />
+		
+		<event name="Model Driven Integration" speaker="Joe Berkovitz" start="10:00" end="11:20" track="Integration" />
+		<event name="Remoting vs. Flex Data Services" speaker="Kevin Schmidt" start="13:00" end="14:20" track="Integration" />
+		<event name="Flex with PHP" speaker="Renaun Erickson" start="14:30" end="15:50" track="Integration" />
+		<event name="Flex with Java" speaker="Christophe Coenraets" start="16:00" end="17:20" track="Integration" />
+	
+	</day>
+	
+
+</days>

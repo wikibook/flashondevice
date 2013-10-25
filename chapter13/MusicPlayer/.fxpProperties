@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fxpProperties changelog=".fxpChanges" compiles="true" mainProject="MusicPlayer" path="/Users/Elad/Desktop/" project="MusicPlayer" projectUUID="efc180c3-40fe-4d24-be9c-654a5596805d" sdkVersion="4.0.0" uuid="7373782d-f7a1-477f-8e72-923258a6adbc" version="1">
+<projects/>
+<src/>
+<swc>
+<linked location="sdkPlaceHolder" path="sdkPlaceHolder" position="0" uuid="7373782d-f7a1-477f-8e72-923258a6adbc"/>
+<linked location="/libs" path="/libs" position="1" uuid="fcb3cae6-1c66-48c0-ae11-73b18c839fda"/>
+</swc>
+<misc/>
+<theme/>
+</fxpProperties>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" resizeMode="scale" xmlns:th="http://ns.adobe.com/thermo/2009">
+	<transitions>
+		<Transition fromState="normal" toState="disabled"/>
+		<Transition fromState="disabled" toState="normal"/>
+	</transitions>
+	<states>
+		<State name="normal" th:color="0xcc0000"/>
+		<State name="disabled" th:color="0x0081cc"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxTextInput")]</Metadata>
+	<BitmapGraphic source="@Embed('assets/SearchVideo/InputBox.png')" resizeMode="scale" d:userLabel="InputBox" left="0" top="0"/>
+	<TextView text="Text" color="white" left="1" top="1" right="1" bottom="1" paddingLeft="4" paddingTop="4" paddingRight="4" paddingBottom="4" id="textView" height="0" width="0" enabled.normal="true" text.normal="Text "/>
+</Skin>

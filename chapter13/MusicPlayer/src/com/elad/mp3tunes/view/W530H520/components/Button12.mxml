@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Group d:userLabel="artistsButton" top="0" left="0">
+		<Rect width="65.0874" height="28.9189" ai:knockout="0" top="0.222" left="0">
+			<fill>
+				<SolidColor color="0x191919"/>
+			</fill>
+		</Rect>
+		<Group d:id="14" top="0" left="0">
+			<Path alpha="0.8" winding="nonZero" ai:knockout="0" data="M 26.777 18.818 C 42.285 19.303 54.918 22.278 64.373 28.45 L 64.373 0 L 0 0 L 0 22.94 C 7.743 19.961 17.152 18.516 26.777 18.818 Z" top="0" left="0">
+				<fill>
+					<LinearGradient x="31.9175" y="-15.0156" scaleX="44.0624" rotation="89.4181">
+						<GradientEntry color="0xe6e6e6" ratio="0"/>
+						<GradientEntry color="0x1a1a1a" alpha="0.83" ratio="1"/>
+					</LinearGradient>
+				</fill>
+			</Path>
+		</Group>
+		<TextGraphic fontFamily="Myriad Pro" fontSize="16.7445" lineHeight="120%" color="0xe6e6e6" whiteSpaceCollapse="preserve" kerning="on" ai:knockout="0" top="7.42" left="9.621" d:userLabel="Artists" id="labelField">
+			<content><p><span>Artists</span></p></content>			</TextGraphic>
+	</Group>
+</Skin>

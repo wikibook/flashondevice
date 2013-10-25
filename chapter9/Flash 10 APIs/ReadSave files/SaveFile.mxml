@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowedApplication xmlns="http://ns.adobe.com/mxml/2009"
+  layout="absolute">
+  
+	<Script>
+		<![CDATA[
+			import mx.controls.Alert;
+
+			import flash.net.FileReference;
+
+			import flash.events.IOErrorEvent;
+			import flash.events.Event;
+
+			private var fileReference:FileReference;
+
+			private function onSaveClick():void
+			{
+				fileReference = new FileReference();
+				fileReference.addEventListener(Event.COMPLETE, fileSaveEventHandler);
+				fileReference.addEventListener(Event.CANCEL,function():void { Alert.show("Cancel") });
+				fileReference.addEventListener(IOErrorEvent.IO_ERROR, function():void { Alert.show("Error saving file") });
+				fileReference.save(inputField.text, "readme.txt");
+			}
+
+			private function fileSaveEventHandler(event:Event):void
+			{
+				Alert.show("File Saved Successfully");
+				fileReference = null;
+			}
+			
+		]]>
+	</Script>
+
+	<FxButton label="Save To File"  x="24" y="62" click="onSaveClick()"/>
+	<TextArea id="inputField" editable="true" x="21" y="9"/>
+
+</WindowedApplication>
+

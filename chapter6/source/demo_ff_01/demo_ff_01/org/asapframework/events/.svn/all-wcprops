@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/demo_ff_01/demo_ff_01/org/asapframework/events
+END
+Event.as
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/demo_ff_01/demo_ff_01/org/asapframework/events/Event.as
+END
+Dispatcher.as
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/demo_ff_01/demo_ff_01/org/asapframework/events/Dispatcher.as
+END
+EventDelegate.as
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/demo_ff_01/demo_ff_01/org/asapframework/events/EventDelegate.as
+END

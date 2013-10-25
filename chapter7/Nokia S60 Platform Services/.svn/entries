@@ -1,0 +1,57 @@
+8
+
+dir
+34
+https://scottjanousek@flashondevices.googlecode.com/svn/trunk/PART%202/chapter7/Nokia%20S60%20Platform%20Services
+https://scottjanousek@flashondevices.googlecode.com/svn
+
+
+
+2009-08-12T17:40:20.033552Z
+32
+scottjanousek
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c72519b2-5c6a-11de-b3c1-0fd540ce45e4
+
+images
+dir
+
+SMSMessenger.swf
+file
+
+
+
+
+2009-08-12T18:55:04.000000Z
+accf190e69ea453f9e0c0e26e18f91ab
+2009-08-12T17:40:20.033552Z
+32
+scottjanousek
+has-props
+
+SMSMessenger.fla
+file
+
+
+
+
+2009-08-12T18:55:04.000000Z
+e447a1f372b22d93e1fa6b98f2533a17
+2009-08-12T17:40:20.033552Z
+32
+scottjanousek
+has-props
+

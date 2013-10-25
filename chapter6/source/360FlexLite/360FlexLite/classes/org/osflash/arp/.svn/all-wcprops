@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/360FlexLite/360FlexLite/classes/org/osflash/arp
+END
+ApplicationTemplate.as
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/360FlexLite/360FlexLite/classes/org/osflash/arp/ApplicationTemplate.as
+END
+ServiceLocatorTemplate.as
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/360FlexLite/360FlexLite/classes/org/osflash/arp/ServiceLocatorTemplate.as
+END
+ValueObjectsTemplate.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/360FlexLite/360FlexLite/classes/org/osflash/arp/ValueObjectsTemplate.as
+END
+CommandRegistryTemplate.as
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/360FlexLite/360FlexLite/classes/org/osflash/arp/CommandRegistryTemplate.as
+END
+ArpForm.as
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/360FlexLite/360FlexLite/classes/org/osflash/arp/ArpForm.as
+END
+CommandTemplate.as
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/360FlexLite/360FlexLite/classes/org/osflash/arp/CommandTemplate.as
+END

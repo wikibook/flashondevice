@@ -1,0 +1,54 @@
+8
+
+dir
+34
+https://scottjanousek@flashondevices.googlecode.com/svn/trunk/PART%202/chapter6/source/FeatherFramework/com/blocketpc/view
+https://scottjanousek@flashondevices.googlecode.com/svn
+
+
+
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c72519b2-5c6a-11de-b3c1-0fd540ce45e4
+
+AbstractView.as
+file
+
+
+
+
+2009-08-12T18:55:03.000000Z
+77d469f93259dc4e553379b27eab8aa5
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+has-props
+
+IView.as
+file
+
+
+
+
+2009-08-12T18:55:03.000000Z
+033125482315877f67a63057daee7143
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+has-props
+

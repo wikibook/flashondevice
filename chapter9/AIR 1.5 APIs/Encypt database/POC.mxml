@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowedApplication xmlns="http://ns.adobe.com/mxml/2009"
+	initialize="initializeHandler()">
+
+	<Script>
+		<![CDATA[
+		
+			import flash.filesystem.File;
+			import flash.data.SQLConnection;
+			import mx.events.FlexEvent;
+			import com.adobe.data.encryption.EncryptionKeyGenerator;
+			
+			private var connection:SQLConnection;
+			private var file:File;
+			private var isCreateDB:Boolean;
+			
+			protected function initializeHandler():void
+			{
+				connection = new SQLConnection();
+				file = File.applicationStorageDirectory.resolvePath("testEncrypt.db");				
+			}		
+			
+			private function openConnection():void
+			{
+				var keyGen:EncryptionKeyGenerator = new EncryptionKeyGenerator();
+				var encryptionKey:ByteArray;
+				var password:String = pasTextInput.text;
+				
+				if (!keyGen.validateStrongPassword(password))
+				{
+					output.text = "The password must be 8-32 char, " + 
+							"with one letter lowercase letter, " + 
+							"one upper case and one number"
+					return;
+				}
+				
+				encryptionKey = keyGen.getEncryptionKey(file, password);
+				
+				connection.addEventListener(SQLEvent.OPEN, openHandler);
+				connection.addEventListener(SQLErrorEvent.ERROR, openError);
+				
+				connection.openAsync(file, SQLMode.CREATE, null, false, 1024, encryptionKey);
+			}
+			
+			private function openHandler(event:SQLEvent):void
+			{
+				if (isCreateDB)
+				{
+					output.text = "Encrypted database created successfully.";
+				}
+				else
+				{
+					output.text = "Encrypted database opened successfully.";
+				}
+			}
+			
+			
+			private function openError(event:SQLErrorEvent):void
+			{
+				if (!isCreateDB && event.error.errorID == EncryptionKeyGenerator.PASSWORD_ERROR_ID)
+				{
+					output.text = "Incorrect password!";
+				}
+				else
+				{
+					output.text = "Error creating or opening database.";
+				}
+			}						
+		]]>
+	</Script>	
+	
+	
+	<TextInput id="pasTextInput" displayAsPassword="true"/>
+	<FxButton label="Create Database" click="isCreateDB=true; openConnection();"/>
+	<FxButton label="Open Database" click="isCreateDB=false; openConnection();"/>
+	
+	<Text id="output" />
+	
+</WindowedApplication>

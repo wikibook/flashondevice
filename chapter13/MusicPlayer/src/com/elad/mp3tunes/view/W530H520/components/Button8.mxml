@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Group d:userLabel="rewindButton" top="0" left="0">
+		<Ellipse blendMode="darken" width="33.4888" height="33.4248" ai:knockout="0" top="0.74" left="0.017">
+			<fill>
+				<SolidColor color="0x3a3a3a"/>
+			</fill>
+		</Ellipse>
+		<Path alpha="0.6" winding="nonZero" ai:knockout="0" data="M 31.281 11.929 C 31.3 11.971 31.31 12.015 31.325 12.059 C 32.115 13.298 32.595 14.753 32.69 16.302 C 33.003 17.123 33.181 18.003 33.24 18.916 C 33.391 18.707 33.506 18.492 33.506 18.258 C 33.506 13.223 31.631 8.663 28.601 5.363 C 25.571 2.063 21.385 0.021 16.761 0.021 C 7.514 0.021 0.017 8.187 0.017 18.258 C 0.017 18.67 0.259 19.045 0.672 19.389 C 0.617 18.136 0.745 16.869 1.097 15.666 C 1.104 15.644 1.115 15.625 1.122 15.604 C 1.253 14.919 1.446 14.25 1.716 13.615 C 1.891 12.705 2.19 11.816 2.651 10.987 C 5.629 5.633 11.126 0.943 17.125 1.486 C 23.284 2.043 28.562 5.61 31.281 11.929 Z" top="0" left="0">
+			<fill>
+				<SolidColor color="0x999999"/>
+			</fill>
+		</Path>
+		<Group d:id="9" top="1.4" left="0">
+			<Path alpha="0.6" winding="nonZero" ai:knockout="0" data="M 33.489 17.001 C 33.489 26.39 0 26.39 0 17.001 C 0 7.611 7.497 0 16.744 0 C 25.991 0 33.489 7.611 33.489 17.001 Z" top="0" left="0">
+				<fill>
+					<LinearGradient x="16.7935" y="12.2007" scaleX="34.1316" rotation="-89.4177">
+						<GradientEntry color="0x666666" ratio="0"/>
+						<GradientEntry color="0x454545" alpha="0.83" ratio="0.208589"/>
+						<GradientEntry color="0x0c0c0c" alpha="0.93" ratio="0.515337"/>
+						<GradientEntry ratio="0.576687"/>
+						<GradientEntry ratio="0.785276"/>
+						<GradientEntry alpha="0.83" ratio="0.993865"/>
+					</LinearGradient>
+				</fill>
+			</Path>
+		</Group>
+		<Group top="12.55" left="5.65">
+			<Group ai:knockout="0" d:id="10" top="0" left="0">
+				<filters>
+					<DropShadowFilter alpha="0.15" blurX="10" blurY="10" distance="1.41421" quality="3"/>
+				</filters>
+				<Path winding="nonZero" ai:knockout="0" data="M 9.346 10.695 L 9.346 0 L 0 5.35 L 9.346 10.695 Z" top="0" left="0">
+					<fill>
+						<SolidColor color="0xe6e6e6"/>
+					</fill>
+				</Path>
+			</Group>
+			<Group ai:knockout="0" d:id="11" top="0" left="9.35">
+				<filters>
+					<DropShadowFilter alpha="0.15" blurX="10" blurY="10" distance="1.41421" quality="3"/>
+				</filters>
+				<Path winding="nonZero" ai:knockout="0" data="M 9.346 10.695 L 9.346 0 L 0 5.35 L 9.346 10.695 Z" top="0" left="0">
+					<fill>
+						<SolidColor color="0xe6e6e6"/>
+					</fill>
+				</Path>
+			</Group>
+		</Group>
+	</Group>
+</Skin>

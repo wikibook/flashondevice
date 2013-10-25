@@ -1,0 +1,103 @@
+<WindowedApplication xmlns="http://ns.adobe.com/mxml/2009" layout="absolute"
+	initialize="initializeHandler(event)" viewSourceURL="srcview/index.html">
+
+	<Script>
+		<![CDATA[
+			import com.elad.framework.sqlite.events.DatabaseSuccessEvent;
+			import com.elad.framework.sqlite.events.StatementCompleteEvent;
+			import com.elad.framework.sqlite.events.DatabaseFailEvent;
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+			import com.elad.framework.sqlite.SQLiteManager;
+
+			private var database:SQLiteManager = SQLiteManager.getInstance();
+
+			protected function initializeHandler(event:FlexEvent):void
+			{
+				database.addEventListener(DatabaseSuccessEvent.COMMAND_EXEC_SUCCESSFULLY, onSelectResult);
+				database.addEventListener(DatabaseFailEvent.COMMAND_EXEC_FAILED, function(event:DatabaseFailEvent):void {
+					trace("execution fail: "+event.errorMessage);
+				});
+				database.addEventListener(DatabaseFailEvent.DATABASE_FAIL, function(event:DatabaseFailEvent):void {
+					trace("database fail: "+event.errorMessage);
+				});	
+				database.addEventListener(DatabaseSuccessEvent.CREATING_DATABASE, function(event:DatabaseSuccessEvent):void {
+					trace(event.message);		
+				});
+				database.addEventListener(DatabaseSuccessEvent.DATABASE_CONNECTED_SUCCESSFULLY, onConnectedHandler);
+				database.addEventListener(DatabaseSuccessEvent.DATABASE_READY, function():void { trace("database ready!"); } );
+				
+				// start database
+				var password:String = "Pa55word";
+				var createTableStatement:String = "CREATE TABLE Users(UserId VARCHAR(150) PRIMARY KEY, UserName VARCHAR(150))";
+				database.start("Users.sql3", "Users", createTableStatement, password);				
+			}
+			
+			private function onConnectedHandler(event:DatabaseSuccessEvent):void
+			{
+				readEntries();
+			}
+			
+			private function insertEntry():void
+			{
+				var sql:String =  "INSERT INTO Users VALUES('"+String(userId.text)+"','"+userName.text+"');";
+				database.executeCustomCommand(sql);
+			}
+
+			private function readEntries():void
+			{
+				database.executeSelectAllCommand();
+			}
+
+			private function onSelectResult(event:StatementCompleteEvent):void
+			{
+				var result:Array = event.results.data;
+				var rowsAffected:int = event.results.rowsAffected;  
+
+				if (rowsAffected == 1)
+					readEntries();
+
+				if (result == null)
+					return;
+
+				var len:int = result.length;
+				var dp:ArrayCollection = new ArrayCollection();
+
+				for (var i:int; i<len; i++)
+				{
+					dp.addItem( {UserId: result[i].UserId, UserName: result[i].UserName} );
+				}
+
+				dataGrid.dataProvider = dp;
+			}			
+
+		]]>
+	</Script>
+	<Panel x="5" y="5" layout="absolute" height="356">
+
+		<VBox horizontalScrollPolicy="off" verticalScrollPolicy="off">
+			<!-- Form -->
+			<Form width="414">
+				<FormItem label="User ID:">
+					<FxTextInput id="userId"/>
+				</FormItem>
+				<FormItem label="User Name:">
+					<FxTextInput id="userName"/>
+				</FormItem>
+				<FormItem>
+					<FxButton label="Insert Entry" click="insertEntry();"/>
+				</FormItem>
+			</Form>
+		</VBox>
+
+		<!-- Results -->
+		<DataGrid x="19" y="123" id="dataGrid">
+			<columns>
+				<DataGridColumn headerText="User Id" dataField="UserId"/>
+				<DataGridColumn headerText="User Name" dataField="UserName"/>
+			</columns>
+		</DataGrid>
+
+	</Panel>
+
+</WindowedApplication>

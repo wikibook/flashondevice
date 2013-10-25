@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FxApplication xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:th="http://ns.adobe.com/thermo/2009" xmlns:ai="http://ns.adobe.com/ai/2008" xmlns:lib="MusicPlayerSmall_library.*" height="480" width="320" backgroundColor="0xcecece">
+	<DesignLayer d:id="2" d:userLabel="MusicPlayer">
+		<Rect width="320" height="480" ai:knockout="0" d:locked="true" d:userLabel="background" top="0.794" left="-0.504">
+			<fill>
+				<SolidColor color="0xe6e6e6"/>
+			</fill>
+		</Rect>
+		<Group d:id="3" d:userLabel="trackInfoBackground" top="33.3" left="-0.6" th:locked="true">
+			<Group ai:knockout="0" top="0" left="0">
+				<Path winding="nonZero" ai:knockout="0" data="M 319.471 88.108 C 319.471 88.658 319.02 89.108 318.471 89.108 L 0.975 89.108 C 0.425 89.108 -0.025 88.658 -0.025 88.108 L -0.025 0.975 C -0.025 0.425 0.425 -0.025 0.975 -0.025 L 318.471 -0.025 C 319.02 -0.025 319.471 0.425 319.471 0.975 L 319.471 88.108 Z" top="0.375" left="0.375">
+					<fill>
+						<LinearGradient x="159.135" y="89.9937" scaleX="110.474" rotation="-89.227">
+							<GradientEntry color="0x333333" ratio="0"/>
+							<GradientEntry color="0x1a1a1a" ratio="0.429813"/>
+							<GradientEntry ratio="0.807208"/>
+						</LinearGradient>
+					</fill>
+				</Path>
+				<Path winding="nonZero" ai:knockout="0" data="M 319.846 88.483 C 319.846 89.033 319.395 89.483 318.846 89.483 L 1.35 89.483 C 0.8 89.483 0.35 89.033 0.35 88.483 L 0.35 1.35 C 0.35 0.8 0.8 0.35 1.35 0.35 L 318.846 0.35 C 319.395 0.35 319.846 0.8 319.846 1.35 L 319.846 88.483 Z" top="0" left="0">
+					<stroke>
+						<SolidColorStroke caps="none" weight="0.75" joints="miter" miterLimit="4"/>
+					</stroke>
+				</Path>
+			</Group>
+		</Group>
+		<TextGraphic fontFamily="Myriad Pro" fontSize="14" lineHeight="120%" color="0xadacac" whiteSpaceCollapse="preserve" kerning="on" ai:knockout="0" d:userLabel="1:15" top="87.092" left="2.965">
+			<content><p><span>1:15</span></p></content>		</TextGraphic>
+		<TextGraphic fontFamily="Myriad Pro" fontSize="14" lineHeight="120%" color="0xadacac" whiteSpaceCollapse="preserve" kerning="on" ai:knockout="0" d:userLabel="5:25" top="89.092" left="289.327">
+			<content><p><span>5:25</span></p></content>		</TextGraphic>
+		<Group d:userLabel="trackInfo" top="46.5" left="8.5">
+			<TextGraphic fontFamily="Myriad Pro" fontSize="20" lineHeight="120%" color="0xe6e6e6" whiteSpaceCollapse="preserve" kerning="on" ai:knockout="0" top="0" left="0" d:userLabel="Israel Kamakawiwo&#x2019;ole - over the...">
+				<content><p><span>Israel Kamakawiwo’ole - over the... the...</span></p></content>			</TextGraphic>
+		</Group>
+		<FxButton left="108" top="138" skinClass="components.Button6"/>
+		<FxButton left="221" top="150" skinClass="components.Button4"/>
+		<FxButton left="15" top="150" skinClass="components.Button5"/>
+		<FxButton left="289" top="5" skinClass="components.Button2"/>
+		<FxButton left="263" top="5" skinClass="components.Button1"/>
+		<FxButton left="10" top="256" skinClass="components.Button10"/>
+		<FxButton left="60" top="256" skinClass="components.Button9"/>
+		<FxButton left="108" top="139" skinClass="components.Button3" visible="false"/>
+		<FxButton left="122" top="256" skinClass="components.Button8" label="Artists"/>
+		<FxButton left="221" top="255" skinClass="components.Button7" label="Albums"/>
+		<TextGraphic fontFamily="Myriad Pro" fontSize="20" fontWeight="bold" lineHeight="120%" whiteSpaceCollapse="preserve" kerning="on" ai:knockout="0" d:userLabel="MP3Tunes Music Player" color="0x000000" top="8.104" left="11.5">
+			<content><p><span>MP3Tunes Music Player</span></p></content>		</TextGraphic>
+		<FxHScrollBar left="32" top="72" skinClass="components.HorizontalScrollbar1"/>
+	</DesignLayer>
+	<Private>
+		<ai:PrivateElement d:ref="#2">
+			<ai:LayerOptions colorType="ThreeColor">
+				<ai:ThreeColor blue="257" green="128.502" red="79.31"/>
+			</ai:LayerOptions>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="6655df0d21dfe0187ac934147a67ece5" d:ref="#3">
+			<ai:Rect height="89.133" d:userLabel="trackInfoBackground" knockout="0" width="319.496" x="0.375" y="32.883">
+				<ai:Stroke colorType="ThreeColor" miterLimit="4" weight="0.75">
+					<ai:ThreeColor/>
+				</ai:Stroke>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="89.227" gradientType="linear" length="110.507" originX="159.51" originY="90.382">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" midPoint="53.247" rampPoint="0">
+								<ai:ThreeColor blue="0.2" green="0.2" red="0.2"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="80.721">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" isPre="1" major="1" minor="0" name="Adobe Round Corners">
+							<ai:Dictionary>
+								<ai:DictEntry name="radius" value="1" valueType="Real"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+						<ai:LiveEffect index="1" isPre="1" major="1" minor="0" name="Adobe Round Corners">
+							<ai:Dictionary>
+								<ai:DictEntry name="radius" value="3" valueType="Real"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+			</ai:Rect>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="fd3469abeca14cbf4105707cdff636eb" d:ref="#4">
+			<ai:Path alpha="0.6" data="M 99.425 52.686C 99.425 79.575 0 79.575 0 52.686C 0 25.789 22.258 3.993 49.712 3.993C 77.167 3.993 99.425 25.789 99.425 52.686Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="89.418" gradientType="linear" length="97.756" originX="49.851" originY="34.943">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.4" green="0.4" red="0.4"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="20.859">
+								<ai:ThreeColor blue="0.271" green="0.271" red="0.271"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.93" rampPoint="51.534">
+								<ai:ThreeColor blue="0.047" green="0.047" red="0.047"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="57.669">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="78.528">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="99.386">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="d4f8b8b2ef90721a5ae19477e5b0a0f1" d:ref="#5">
+			<ai:Path data="M 38.658 33.388L 38.658 69.503L 75.642 51.441L 38.658 33.388Z" d:locked="true" knockout="0">
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" major="1" minor="0" name="Adobe Drop Shadow">
+							<ai:Dictionary>
+								<ai:DictEntry name="opac" value="0.15" valueType="Real"/>
+								<ai:DictEntry name="blur" value="5" valueType="Real"/>
+								<ai:DictEntry name="sclr" valueType="FillStyle">
+									<ai:Fill colorType="ThreeColor">
+										<ai:ThreeColor/>
+									</ai:Fill>
+								</ai:DictEntry>
+								<ai:DictEntry name="csrc" value="0" valueType="Integer"/>
+								<ai:DictEntry name="dark" value="100" valueType="Real"/>
+								<ai:DictEntry name="vert" value="1" valueType="Real"/>
+								<ai:DictEntry name="pair" value="1" valueType="Boolean"/>
+								<ai:DictEntry name="horz" value="1" valueType="Real"/>
+								<ai:DictEntry name="blnd" value="0" valueType="Integer"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+				<ai:Fill colorType="ThreeColor">
+					<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="3a73525f1774c6ff664d5f5fda2c145e" d:ref="#6">
+			<ai:Path alpha="0.6" data="M 80.543 44.243C 80.543 66.827 0 66.827 0 44.243C 0 21.658 18.032 3.353 40.271 3.353C 62.512 3.353 80.543 21.658 80.543 44.243Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="89.418" gradientType="linear" length="82.094" originX="40.389" originY="29.345">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.4" green="0.4" red="0.4"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="20.859">
+								<ai:ThreeColor blue="0.271" green="0.271" red="0.271"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.93" rampPoint="51.534">
+								<ai:ThreeColor blue="0.047" green="0.047" red="0.047"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="57.669">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="78.528">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="99.386">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="495059fabacd171b87521e6e11df0230" d:ref="#7">
+			<ai:Path data="M 37.35 14.05L 37.35 39.773L 59.827 26.907L 37.35 14.05Z" knockout="0">
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" major="1" minor="0" name="Adobe Drop Shadow">
+							<ai:Dictionary>
+								<ai:DictEntry name="opac" value="0.15" valueType="Real"/>
+								<ai:DictEntry name="blur" value="5" valueType="Real"/>
+								<ai:DictEntry name="sclr" valueType="FillStyle">
+									<ai:Fill colorType="ThreeColor">
+										<ai:ThreeColor/>
+									</ai:Fill>
+								</ai:DictEntry>
+								<ai:DictEntry name="csrc" value="0" valueType="Integer"/>
+								<ai:DictEntry name="dark" value="100" valueType="Real"/>
+								<ai:DictEntry name="vert" value="1" valueType="Real"/>
+								<ai:DictEntry name="pair" value="1" valueType="Boolean"/>
+								<ai:DictEntry name="horz" value="1" valueType="Real"/>
+								<ai:DictEntry name="blnd" value="0" valueType="Integer"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+				<ai:Fill colorType="ThreeColor">
+					<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="35aaca8be5d48b501bf4c63d22fe529d" d:ref="#8">
+			<ai:Path data="M 14.872 14.05L 14.872 39.773L 37.35 26.907L 14.872 14.05Z" knockout="0">
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" major="1" minor="0" name="Adobe Drop Shadow">
+							<ai:Dictionary>
+								<ai:DictEntry name="opac" value="0.15" valueType="Real"/>
+								<ai:DictEntry name="blur" value="5" valueType="Real"/>
+								<ai:DictEntry name="sclr" valueType="FillStyle">
+									<ai:Fill colorType="ThreeColor">
+										<ai:ThreeColor/>
+									</ai:Fill>
+								</ai:DictEntry>
+								<ai:DictEntry name="csrc" value="0" valueType="Integer"/>
+								<ai:DictEntry name="dark" value="100" valueType="Real"/>
+								<ai:DictEntry name="vert" value="1" valueType="Real"/>
+								<ai:DictEntry name="pair" value="1" valueType="Boolean"/>
+								<ai:DictEntry name="horz" value="1" valueType="Real"/>
+								<ai:DictEntry name="blnd" value="0" valueType="Integer"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+				<ai:Fill colorType="ThreeColor">
+					<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="d748ff16977e0d1f9d584d5a5decb36b" d:ref="#9">
+			<ai:Path alpha="0.6" data="M 81.074 44.246C 81.074 66.826 0.528 66.826 0.528 44.246C 0.528 21.66 18.559 3.357 40.801 3.357C 63.04 3.357 81.074 21.66 81.074 44.246Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="89.418" gradientType="linear" length="82.088" originX="40.39" originY="29.343">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.4" green="0.4" red="0.4"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="20.859">
+								<ai:ThreeColor blue="0.271" green="0.271" red="0.271"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.93" rampPoint="51.534">
+								<ai:ThreeColor blue="0.047" green="0.047" red="0.047"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="57.669">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="78.528">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="99.386">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="fdc6cc1adaea685138e1199eaa03111b" d:ref="#10">
+			<ai:Path data="M 36.606 39.776L 36.606 14.054L 14.125 26.918L 36.606 39.776Z" knockout="0">
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" major="1" minor="0" name="Adobe Drop Shadow">
+							<ai:Dictionary>
+								<ai:DictEntry name="opac" value="0.15" valueType="Real"/>
+								<ai:DictEntry name="blur" value="5" valueType="Real"/>
+								<ai:DictEntry name="sclr" valueType="FillStyle">
+									<ai:Fill colorType="ThreeColor">
+										<ai:ThreeColor/>
+									</ai:Fill>
+								</ai:DictEntry>
+								<ai:DictEntry name="csrc" value="0" valueType="Integer"/>
+								<ai:DictEntry name="dark" value="100" valueType="Real"/>
+								<ai:DictEntry name="vert" value="1" valueType="Real"/>
+								<ai:DictEntry name="pair" value="1" valueType="Boolean"/>
+								<ai:DictEntry name="horz" value="1" valueType="Real"/>
+								<ai:DictEntry name="blnd" value="0" valueType="Integer"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+				<ai:Fill colorType="ThreeColor">
+					<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="dfbf3710962615112bd016ffb0f95cfe" d:ref="#11">
+			<ai:Path data="M 59.085 39.776L 59.085 14.054L 36.606 26.918L 59.085 39.776Z" knockout="0">
+				<ai:ArtStyle>
+					<ai:LiveEffects>
+						<ai:LiveEffect index="0" major="1" minor="0" name="Adobe Drop Shadow">
+							<ai:Dictionary>
+								<ai:DictEntry name="opac" value="0.15" valueType="Real"/>
+								<ai:DictEntry name="blur" value="5" valueType="Real"/>
+								<ai:DictEntry name="sclr" valueType="FillStyle">
+									<ai:Fill colorType="ThreeColor">
+										<ai:ThreeColor/>
+									</ai:Fill>
+								</ai:DictEntry>
+								<ai:DictEntry name="csrc" value="0" valueType="Integer"/>
+								<ai:DictEntry name="dark" value="100" valueType="Real"/>
+								<ai:DictEntry name="vert" value="1" valueType="Real"/>
+								<ai:DictEntry name="pair" value="1" valueType="Boolean"/>
+								<ai:DictEntry name="horz" value="1" valueType="Real"/>
+								<ai:DictEntry name="blnd" value="0" valueType="Integer"/>
+							</ai:Dictionary>
+						</ai:LiveEffect>
+					</ai:LiveEffects>
+				</ai:ArtStyle>
+				<ai:Fill colorType="ThreeColor">
+					<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="8e175956bbd872af34f9a761867a8277" d:ref="#12">
+			<ai:Path alpha="0.8" data="M 17.637 25.375C 27.854 26.029 36.175 30.042 42.401 38.364L 42.401 0L 0 0L 0 30.932C 5.1 26.917 11.296 24.968 17.637 25.375Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="-89.418" gradientType="linear" length="58.734" originX="20.842" originY="-19.794">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="100">
+								<ai:ThreeColor blue="0.102" green="0.102" red="0.102"/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="9eb11fd9785bfb6fa7624ef74354bc78" d:ref="#13">
+			<ai:Path alpha="0.8" data="M 17.638 25.375C 27.854 26.029 36.175 30.041 42.401 38.364L 42.401 0L 0 0L 0 30.932C 5.101 26.917 11.297 24.968 17.638 25.375Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="-89.418" gradientType="linear" length="58.734" originX="20.842" originY="-19.794">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="100">
+								<ai:ThreeColor blue="0.102" green="0.102" red="0.102"/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="af1025c6069953e86e818f95797dcc9d" d:ref="#14">
+			<ai:Path alpha="0.6" data="M 99.425 52.683C 99.425 79.571 0 79.571 0 52.683C 0 25.787 22.258 3.989 49.712 3.989C 77.165 3.989 99.425 25.787 99.425 52.683Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="89.418" gradientType="linear" length="97.757" originX="49.851" originY="34.943">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.4" green="0.4" red="0.4"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="20.859">
+								<ai:ThreeColor blue="0.271" green="0.271" red="0.271"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.93" rampPoint="51.534">
+								<ai:ThreeColor blue="0.047" green="0.047" red="0.047"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="57.669">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="78.528">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="99.386">
+								<ai:ThreeColor/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="b320cbc913c023f4c1ac720788d78139" d:ref="#15">
+			<ai:Path alpha="0.8" data="M 36.108 25.375C 57.021 26.03 74.056 30.042 86.805 38.365L 86.805 0L 0 0L 0 30.934C 10.441 26.918 23.131 24.968 36.108 25.375Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="-89.418" gradientType="linear" length="59.419" originX="43.041" originY="-20.248">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="100">
+								<ai:ThreeColor blue="0.102" green="0.102" red="0.102"/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="e8c96deffd99e580d5753c14e6782f62" d:ref="#16">
+			<ai:Path alpha="0.8" data="M 36.109 25.376C 57.022 26.03 74.057 30.042 86.805 38.365L 86.805 0L 0 0L 0 30.934C 10.442 26.918 23.131 24.969 36.109 25.376Z" knockout="0">
+				<ai:ArtStyle/>
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="-89.418" gradientType="linear" length="59.417" originX="43.04" originY="-20.248">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.902" green="0.902" red="0.902"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" opacity="0.83" rampPoint="100">
+								<ai:ThreeColor blue="0.102" green="0.102" red="0.102"/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+			</ai:Path>
+		</ai:PrivateElement>
+	</Private>
+</FxApplication>

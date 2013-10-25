@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionScriptProperties mainApplicationPath="SearchVideoMobile.mxml" projectUUID="e191640f-3124-4a3d-bf7f-5a150cbb0665" version="4">
+<compiler additionalCompilerArguments="-locale en_US -includes flexUnitTests.TestSearch" copyDependentFiles="true" enableModuleDebug="true" flexSDK="Flex 4.0" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="true" verifyDigests="true" warn="true">
+<compilerSourcePath/>
+<libraryPath defaultLinkType="1">
+<libraryPathEntry kind="4" path=""/>
+<libraryPathEntry kind="1" linkType="1" path="libs"/>
+<libraryPathEntry kind="3" linkType="1" path="/Applications/Adobe Gumbo MAX Preview/plugins/com.adobe.flexbuilder.flexunit_4.0.0.215018/flexunitframework/libs/flexunit.swc" useDefaultLinkType="false"/>
+<libraryPathEntry kind="3" linkType="1" path="/Applications/Adobe Gumbo MAX Preview/plugins/com.adobe.flexbuilder.flexunit_4.0.0.215018/flexunitframework/libs/flexunitextended.swc" useDefaultLinkType="false"/>
+</libraryPath>
+<sourceAttachmentPath/>
+</compiler>
+<applications>
+<application path="SearchVideoMobile.mxml"/>
+</applications>
+<modules/>
+<buildCSSFiles/>
+</actionScriptProperties>

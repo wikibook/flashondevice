@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Group d:userLabel="artistsButton" top="0" left="0">
+		<Rect width="87.7695" height="38.9966" ai:knockout="0" top="0.3" left="0">
+			<fill>
+				<SolidColor color="0x191919"/>
+			</fill>
+		</Rect>
+		<Group d:id="15" top="0" left="0">
+			<Path alpha="0.8" winding="nonZero" ai:knockout="0" data="M 36.108 25.375 C 57.021 26.03 74.056 30.042 86.805 38.365 L 86.805 0 L 0 0 L 0 30.934 C 10.441 26.918 23.131 24.968 36.108 25.375 Z" top="0" left="0">
+				<fill>
+					<LinearGradient x="43.0405" y="-20.248" scaleX="59.4187" rotation="89.4181">
+						<GradientEntry color="0xe6e6e6" ratio="0"/>
+						<GradientEntry color="0x1a1a1a" alpha="0.83" ratio="1"/>
+					</LinearGradient>
+				</fill>
+			</Path>
+		</Group>
+		<TextGraphic fontFamily="Myriad Pro" fontSize="22.5797" lineHeight="120%" color="0xe6e6e6" whiteSpaceCollapse="preserve" kerning="on" ai:knockout="0" top="10.007" left="12.973" d:userLabel="Artists" id="labelField">
+			<content><p><span>Artists</span></p></content>			</TextGraphic>
+	</Group>
+</Skin>

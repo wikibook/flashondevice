@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Group d:userLabel="albumButton" top="0" left="0">
+		<Rect width="87.771" height="38.9971" ai:knockout="0" top="0.3" left="0">
+			<fill>
+				<SolidColor color="0x191919"/>
+			</fill>
+		</Rect>
+		<Group d:id="16" top="0" left="0">
+			<Path alpha="0.8" winding="nonZero" ai:knockout="0" data="M 36.109 25.377 C 57.023 26.03 74.057 30.042 86.805 38.365 L 86.805 0 L 0 0 L 0 30.934 C 10.442 26.918 23.131 24.969 36.109 25.377 Z" top="0" left="0">
+				<fill>
+					<LinearGradient x="43.0396" y="-20.2476" scaleX="59.4172" rotation="89.4181">
+						<GradientEntry color="0xe6e6e6" ratio="0"/>
+						<GradientEntry color="0x1a1a1a" alpha="0.83" ratio="1"/>
+					</LinearGradient>
+				</fill>
+			</Path>
+		</Group>
+		<TextGraphic fontFamily="Myriad Pro" fontSize="22.5797" lineHeight="120%" color="0xe6e6e6" whiteSpaceCollapse="preserve" kerning="on" ai:knockout="0" top="11.328" left="8.461" d:userLabel="Albums" id="labelField">
+			<content><p><span>Albums</span></p></content>			</TextGraphic>
+	</Group>
+</Skin>

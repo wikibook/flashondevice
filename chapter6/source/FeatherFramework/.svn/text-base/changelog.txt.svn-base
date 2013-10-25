@@ -1,0 +1,27 @@
+CHANGE LOG
+
+04/04/2009 - version 0.4.7
+1. Se ha añadido un nuevo método público para posicionar y un nuevo estado de posicionamiento en SofkKeysLight para posicionar las SoftKeys a la derecha en formato apaisado.
+2. Se ha añadido un nuevo evento ON_ROLLOUT_ITEM y se ha quitado el control por teclas dejando ahora los métodos de next() y previous() públicos en NavigationMenuLight.
+3. Se han privatizado los constructores de KeyManager, TransitionManager y ModelLocator.
+4. Se han añadido dos métodos públicos llamados onRollOverItem() y onRollOutItem() para establecer los estados de los botones de ListLight.
+5. Se han añadido dos componentes nuevos ScrollBarLight y TextAreaLight.
+6. Se han separado las scrollbars de los componentes.
+7. Se ha añadido un nuevo Manager de idiomas LocaleManager.
+X. Se ha añadido este changelog y es redundante añadirlo. Mola.
+
+04/03/2009 - version 0.4.4
+1. Se ha cambiado el nombre de la variable que se pasaba en el KeyManager de "tecla" a "key", éste era el último detalle que quedaba por traducir al inglés en el framework.
+2. Se han corregido problemas en los eventos de teclado en el componente NavigationMenuLight.
+3. Se han corregido problemas en los eventos de teclado en AbstractView.
+4. Se han corregido problemas a la hora de refrescar los items en el componente ListLight.
+5. Se ha añadido una clase para parsear archivos de intercambio de datos JSON.
+6. Se ha añadido un getter/setter para pasar el modelo de datos a los items de ListLight en la clase ListButtonLight.
+7. Se ha añadido una clase para manejar la navegación entre pantallas.
+8. Se ha cambiado la aplicación de ejemplo, por una actualizada y más sencilla.
+
+02/01/2009 - version 0.4.3
+1. Se ha añadido un nuevo componente NavigationMenuLight.
+
+25/12/2008 - version 0.4.0
+1. Primera release.

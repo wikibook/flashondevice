@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view:AbstractMusicPlayerMain xmlns:mx="http://www.adobe.com/2006/mxml" 
+	backgroundColor="0xe6e6e6"
+	width="800" height="480" x="0" y="0" 
+	xmlns:view="com.elad.mp3tunes.view.*"
+	xmlns:player="com.elad.mp3tunes.view.W800H480.*"
+	borderStyle="solid" borderThickness="3"
+	horizontalScrollPolicy="off"
+	verticalScrollPolicy="off">
+	
+	<mx:VBox>
+		
+		<player:MusicPlayer id="musicPlayer" height="200" />	
+		
+		<mx:Canvas width="100%" height="337">
+		    
+		    <mx:List id="tileList"
+		    	width="173" height="240"
+		        columnWidth="125" 
+		        rowHeight="125"
+		        columnCount="4" 
+		        itemRenderer="com.elad.mp3tunes.view.W800H480.components.TileResultRenderer"  x="15" y="8"/>
+		    
+		    <mx:AdvancedDataGrid id="dg"
+		        width="560" height="240"
+		        sortExpertMode="true" x="213" y="10">
+		        <mx:columns>
+		            <mx:AdvancedDataGridColumn dataField="trackTitle" />
+		            <mx:AdvancedDataGridColumn dataField="artistName" />
+		            <mx:AdvancedDataGridColumn dataField="albumTitle" />
+		        </mx:columns>
+		   </mx:AdvancedDataGrid>
+		   
+		</mx:Canvas>
+		
+	</mx:VBox>
+	
+</view:AbstractMusicPlayerMain>

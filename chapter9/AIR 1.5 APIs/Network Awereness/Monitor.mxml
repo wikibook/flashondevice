@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowedApplication xmlns="http://ns.adobe.com/mxml/2009"
+  layout="absolute"
+  creationComplete="trackStatus();">
+  
+  <Script>
+    <![CDATA[
+    
+      	import air.net.ServiceMonitor;
+      	import air.net.URLMonitor;
+		
+		[Bindable]
+		private var networkStatus:String;
+  
+		private function trackStatus() : void
+		{
+			var urlRequest:URLRequest = new URLRequest("YourSite.com");
+			var urlMonitor:URLMonitor;
+			urlMonitor = new URLMonitor(urlRequest);
+
+			urlMonitor = new URLMonitor(urlRequest );
+			urlMonitor.addEventListener(StatusEvent.STATUS, statusChangeEventHandler);
+			urlMonitor.start();
+  		}
+  
+  		private function statusChangeEventHandler(event:StatusEvent) : void
+		{
+			networkStatus = event.code;
+  		}
+      
+    ]]>
+  </Script>
+  
+  <Label text="{networkStatus}"/>
+  
+</WindowedApplication>
+

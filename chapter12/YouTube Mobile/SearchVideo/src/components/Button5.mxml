@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" resizeMode="scale" xmlns:th="http://ns.adobe.com/thermo/2009">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up" th:color="0xcc0000"/>
+		<State name="over" th:color="0x0081cc"/>
+		<State name="down" th:color="0x00cc21"/>
+		<State name="disabled" th:color="0x0003a3"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Rect height="103" width="135" left="0" top="0">
+		<fill>
+			<SolidColor color="0xFFFFFF" color.over="0xf99911"/>
+		</fill>
+		<stroke>
+			<SolidColorStroke color="0x8d8e8e" weight="1"/>
+		</stroke>
+	</Rect>
+	<BitmapGraphic source="@Embed('assets/SearchVideo/img1.png')" resizeMode="scale" d:userLabel="img1" left="3" top="4"/>
+	<TextGraphic color="0xfffefe" left="143" text="Text text text..." fontSize="15" fontFamily="Helvetica" top="5" height="15" width="114" color.over="0xf99911"/>
+	<TextGraphic color="0xd2d2d2" left="144" text="Text text text text text text text text text text text text  ..." fontSize="12" fontFamily="Helvetica" top="24" height="42" width="97"/>
+	<Path height="14" left="144" width="14" data="M 87.95 106.25 L 54.19 87.36 19.50 104.47 27.03 66.53 0.04 38.81 38.45 34.25 56.47 0.02 72.68 35.14 110.80 41.70 82.41 67.97 Z " top="69">
+		<fill>
+			<SolidColor color="0xf9f2f2"/>
+		</fill>
+		<stroke>
+			<SolidColorStroke color="0x666464" weight="1"/>
+		</stroke>
+	</Path>
+	<Path height="14" left="174" width="14" data="M 87.95 106.25 L 54.19 87.36 19.50 104.47 27.03 66.53 0.04 38.81 38.45 34.25 56.47 0.02 72.68 35.14 110.80 41.70 82.41 67.97 Z " top="69">
+		<fill>
+			<SolidColor color="0xf9f2f2"/>
+		</fill>
+		<stroke>
+			<SolidColorStroke color="0x666464" weight="1"/>
+		</stroke>
+	</Path>
+	<Path height="14" left="189" width="14" data="M 87.95 106.25 L 54.19 87.36 19.50 104.47 27.03 66.53 0.04 38.81 38.45 34.25 56.47 0.02 72.68 35.14 110.80 41.70 82.41 67.97 Z " top="69">
+		<fill>
+			<SolidColor color="0xf9f2f2"/>
+		</fill>
+		<stroke>
+			<SolidColorStroke color="0x666464" weight="1"/>
+		</stroke>
+	</Path>
+	<Path height="14" left="159" width="14" data="M 87.95 106.25 L 54.19 87.36 19.50 104.47 27.03 66.53 0.04 38.81 38.45 34.25 56.47 0.02 72.68 35.14 110.80 41.70 82.41 67.97 Z " top="69">
+		<fill>
+			<SolidColor color="0xf9f2f2"/>
+		</fill>
+		<stroke>
+			<SolidColorStroke color="0x666464" weight="1"/>
+		</stroke>
+	</Path>
+	<Path height="14" left="204" width="14" data="M 87.95 106.25 L 54.19 87.36 19.50 104.47 27.03 66.53 0.04 38.81 38.45 34.25 56.47 0.02 72.68 35.14 110.80 41.70 82.41 67.97 Z " top="69" d:userLabel="path">
+		<fill>
+			<SolidColor color="0xf9f2f2"/>
+		</fill>
+		<stroke>
+			<SolidColorStroke color="0x666464" weight="1"/>
+		</stroke>
+	</Path>
+	<TextGraphic color="0xe1e1e1" left="143" text="2355 viewed" fontSize="12" fontFamily="Helvetica" top="90" id="labelField"/>
+</Skin>

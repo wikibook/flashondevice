@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view:AbstractMusicPlayer xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:view="com.elad.mp3tunes.view.*"
+	width="800" height="200"
+	horizontalScrollPolicy="off"
+	verticalScrollPolicy="off">
+	
+	<mx:Style source="assets/css/MusicPlayer.css" />
+
+	<mx:Canvas width="780" height="92.1" x="9" y="36" styleName="trackSliderBackground">
+		
+		<mx:Text id="currentTimeText" fontFamily="Myriad Pro" fontSize="16.7" color="0xadacac" letterSpacing="0" kerning="true"  
+			top="50" left="18" text="00:00" />
+		
+		<mx:Text id="totalTimeText" text="00:00" fontFamily="Myriad Pro" fontSize="16.7" color="0xadacac" kerning="true" letterSpacing="0" 
+			top="50" left="717" />
+		
+		<mx:Text id="songInfoText" fontFamily="Myriad Pro" 
+			fontSize="20" color="0xe6e6e6" width="300" height="20"
+			top="11" left="37" text="Somewhere over The... "/>
+			
+		<!-- Track Slider -->
+		<mx:ProgressBar id="downloadProgressBar"
+			styleName="downloadProgressBarSkin"
+			x="82" y="52" 
+			width="620" height="12"
+			minimum="0" maximum="100" 
+			labelWidth="0"
+			direction="right" mode="manual" />
+	
+		<mx:ProgressBar id="trackProgressBar" 
+			styleName="trackProgressBarSkin"
+			x="82" y="52" 
+			width="620" height="12"
+			minimum="0" maximum="100"
+			labelWidth="0"
+			direction="right" mode="manual" />			 
+		
+		<mx:HSlider id="songSlider" styleName="trackThumbSkin"
+			x="67" y="48" width="643.7" height="12"
+			sliderThumbClass="com.elad.mp3tunes.view.W800H480.components.TrackSliderThumb"
+			 />
+			 		
+	</mx:Canvas>
+			 
+	<mx:Text fontFamily="Myriad Pro" fontSize="20" fontWeight="bold" 
+		color="0x000000" top="8.104" left="11.5" text="MP3Tunes Music Player"/>
+	
+	<!-- Volume Slider -->
+	<mx:ProgressBar id="volumeProgressBar" visible="false"
+		minimum="0" maximum="100"/>		
+	
+	<mx:HScrollBar id="volumeSlider" left="263" top="5" />	
+	
+	<mx:Button id="forwardButton" buttonMode="true" styleName="forwardButton" x="111" y="147"/>
+	<mx:Button id="rewindButton" buttonMode="true" styleName="rewindButton" x="21" y="147"/>
+	<mx:Button id="randomButton" buttonMode="true" styleName="randomButton" x="166" y="147"/>
+	<mx:Button id="replayButton" buttonMode="true" styleName="replayButton" x="213" y="147"/>
+	<mx:Button id="pauseButton" buttonMode="true" styleName="pauseButton" x="62" y="142"/>
+	<mx:Button id="artistsButton" buttonMode="true" styleName="artistsButton" x="267" y="147"/>
+	<mx:Button id="albumsButton" buttonMode="true" styleName="albumsButton" x="346" y="147"/>
+	<mx:Button id="playButton" buttonMode="true" styleName="playButton" x="62" y="141"/>
+		
+</view:AbstractMusicPlayer>

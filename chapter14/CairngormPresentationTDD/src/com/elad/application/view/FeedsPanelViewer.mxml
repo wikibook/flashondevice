@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
+	title="{feedsPanelViewer.panelTitle}"
+	layout="vertical" 
+	width="600" height="450"
+	styleName="panelView">
+	
+	<mx:Script>
+		<![CDATA[
+			import com.elad.application.vo.FeedVO;
+			import com.elad.application.model.presentation.FeedsPanelViewerPM;
+			
+			[Bindable]
+			public var feedsPanelViewer:FeedsPanelViewerPM;
+			
+		]]>
+	</mx:Script>
+	
+	<!-- Feeds List -->
+	<mx:List
+		id="feedList"
+		width="540" 
+		height="200"
+		borderStyle="solid"
+		dataProvider="{feedsPanelViewer.feedsCollection.collection}"
+		change="feedsPanelViewer.changeSelectedFeed(FeedVO( feedList.selectedItem ))"
+		labelField="title"/>
+
+	<!-- Detail information -->
+	<mx:VBox width="540" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+		<mx:Spacer height="15" />
+		<mx:HBox>
+			<mx:Label text="FEED DETAIL:" fontWeight="bold"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="author:" fontWeight="bold"/>
+			<mx:Label text="{feedsPanelViewer.selectedFeed.author}" width="100%"/>			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="category:" fontWeight="bold"/>
+			<mx:Label text="{feedsPanelViewer.selectedFeed.category}" width="100%"/>			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="description:" fontWeight="bold"/>
+			<mx:Label text="{feedsPanelViewer.selectedFeed.description}" width="100%"/>			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="link:" fontWeight="bold"/>
+			<mx:Label text="{feedsPanelViewer.selectedFeed.link}" width="100%"/>			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="pubdate:" fontWeight="bold"/>
+			<mx:Label text="{feedsPanelViewer.selectedFeed.pubdate}" width="100%"/>			
+		</mx:HBox>
+	</mx:VBox>
+		
+</mx:Panel>

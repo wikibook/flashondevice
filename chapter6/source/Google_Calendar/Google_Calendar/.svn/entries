@@ -1,0 +1,79 @@
+8
+
+dir
+34
+https://scottjanousek@flashondevices.googlecode.com/svn/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar
+https://scottjanousek@flashondevices.googlecode.com/svn
+
+
+
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c72519b2-5c6a-11de-b3c1-0fd540ce45e4
+
+packages_test.html
+file
+
+
+
+
+2009-08-12T18:54:54.000000Z
+208bf82c5b5b7bba001af2cfc13797e2
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+has-props
+
+fla
+dir
+
+images
+dir
+
+php
+dir
+
+GooCal.fdp
+file
+
+
+
+
+2009-08-12T18:54:55.000000Z
+dd5a94965a40d1288126e9d1784d47d5
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+has-props
+
+classes
+dir
+
+test_template.html
+file
+
+
+
+
+2009-08-12T18:54:55.000000Z
+70ae810d4185aadf44bd0038fa9d887d
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+has-props
+

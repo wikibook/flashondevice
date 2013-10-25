@@ -1,0 +1,54 @@
+8
+
+dir
+34
+https://scottjanousek@flashondevices.googlecode.com/svn/trunk/PART%202/chapter6/source/360FlexLite/360FlexLite/classes/com/jxl/threesixtyflex/commands
+https://scottjanousek@flashondevices.googlecode.com/svn
+
+
+
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c72519b2-5c6a-11de-b3c1-0fd540ce45e4
+
+GetScheduleByDayCommand.as
+file
+
+
+
+
+2009-08-12T18:54:48.000000Z
+9df4ddf14eb4bd005c13295f77cdd100
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+has-props
+
+CheckForUpdateCommand.as
+file
+
+
+
+
+2009-08-12T18:54:48.000000Z
+8c947ef1d54db5e46f1069e47ab155b3
+2009-08-12T17:35:04.082888Z
+31
+scottjanousek
+has-props
+

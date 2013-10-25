@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowedApplication xmlns="http://ns.adobe.com/mxml/2009">
+	
+	<Group>
+		
+		<TextBox styleName="helloTextBox" fontSize="12" width="100"> Hello, world!</TextBox>
+		
+		<TextGraphic fontSize="20" rotation="12" alpha="0.8" x="50" y="50">
+		    <content>
+		        <TextFlow color="0x000000">
+		            <p>
+		                <span>Hello </span>
+		                <span fontWeight="bold">World!</span>
+		            </p>
+		        </TextFlow>
+		    </content>
+		</TextGraphic>
+		
+	</Group>
+	
+	<TextView fontSize="20" rotation="12" alpha="0.8" x="80" y="50">
+	    <content>
+	        <TextFlow color="0x000000">
+	            <p>
+	                <span>Hello </span>
+	                <span fontWeight="bold">World!</span>
+	            </p>
+	        </TextFlow>
+	    </content>
+	</TextView>		
+	
+</WindowedApplication>

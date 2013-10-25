@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:ai="http://ns.adobe.com/ai/2008" xmlns:d="http://ns.adobe.com/fxg/2008/dt" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Path winding="nonZero" ai:knockout="0" 
+		data="M 81.615 4.98 C 81.615 7.443 81.615 9.44 79.771 9.44 L 2.339 9.44 C 1.321 9.44 0.494 9.44 0.494 4.98 L 0.494 4.98 C 0.494 0.518 1.321 0.518 2.339 0.518 L 79.771 0.518 C 81.615 0.518 81.615 2.516 81.615 4.98 L 81.615 4.98 Z" 
+		d:userLabel="volumeTrack" left="0" top="0">
+		<stroke>
+			<SolidColorStroke color="0x898989" caps="none" weight="1" joints="miter" miterLimit="4"/>
+		</stroke>
+	</Path>
+</Skin>

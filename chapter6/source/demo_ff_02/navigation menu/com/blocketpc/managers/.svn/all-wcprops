@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/demo_ff_02/navigation%20menu/com/blocketpc/managers
+END
+AbstractManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/demo_ff_02/navigation%20menu/com/blocketpc/managers/AbstractManager.as
+END
+KeyManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/demo_ff_02/navigation%20menu/com/blocketpc/managers/KeyManager.as
+END
+TransitionManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/demo_ff_02/navigation%20menu/com/blocketpc/managers/TransitionManager.as
+END
+SharedObjectManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/demo_ff_02/navigation%20menu/com/blocketpc/managers/SharedObjectManager.as
+END

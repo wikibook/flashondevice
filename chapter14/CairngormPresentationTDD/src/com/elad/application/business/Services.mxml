@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cairngorm:ServiceLocator xmlns:mx="http://www.adobe.com/2006/mxml" 
+	                      xmlns:cairngorm="com.adobe.cairngorm.business.*" >
+	<mx:Script>
+		<![CDATA[
+		
+		    //todo: implement service constants
+		    public static var ADOBE_FEEDS:String = "adobe_feeds";
+		    
+		]]>
+	</mx:Script>
+	
+	<mx:HTTPService id="adobe_feeds" 
+		url="http://rss.adobe.com/en/resources_flex.rss" 
+		resultFormat="e4x"/>
+		
+</cairngorm:ServiceLocator>

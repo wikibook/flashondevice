@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:view="com.elad.TDDPureMVC.view.components.*"
+	layout="absolute"
+	creationComplete="ApplicationFacade.getInstance().startup(this);">
+	
+	<mx:Style source="assets/main.css" />
+	
+	<view:FeedsPanelViewer id="feedsPanelViewer" />
+	
+</mx:Application>

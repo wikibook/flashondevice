@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" 
+	xmlns:ai="http://ns.adobe.com/ai/2008" 
+	xmlns:d="http://ns.adobe.com/fxg/2008/dt" 
+	resizeMode="scale" 
+	xmlns:th="http://ns.adobe.com/thermo/2009">
+	
+	<transitions>
+		<Transition fromState="normal" toState="disabled"/>
+		<Transition fromState="disabled" toState="normal"/>
+	</transitions>
+	<states>
+		<State name="normal" th:color="0xcc0000"/>
+		<State name="disabled" th:color="0x0081cc"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxHScrollBar")]</Metadata>
+	<FxButton left="20" top="6" skinClass="com.elad.mp3tunes.view.W530H520.components.Button4" id="track"/>
+	<FxButton left="42" top="2" skinClass="com.elad.mp3tunes.view.W530H520.components.Button3" id="thumb"/>
+	<FxButton left="107" top="0" skinClass="com.elad.mp3tunes.view.W530H520.components.Button1" id="incrementButton"/>
+	<FxButton left="0" top="0" skinClass="com.elad.mp3tunes.view.W530H520.components.Button2" id="decrementButton"/>
+	
+</Skin>

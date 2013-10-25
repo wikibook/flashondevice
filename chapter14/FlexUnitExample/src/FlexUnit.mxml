@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:flexunit="flexunit.flexui.*"
+	creationComplete="onCreationComplete()" 
+	layout="absolute" viewSourceURL="srcview/index.html">
+	
+	<mx:Script>
+		<![CDATA[
+		
+			import flexUnitTests.TestCaseClass;
+			import flexUnitTests.TestSuiteClass;
+			import flexunit.framework.TestSuite;
+			
+			private function onCreationComplete():void
+			{
+				testRunner.test = currentRunTestSuite(); 
+				testRunner.startTest();
+			}
+			
+			public function currentRunTestSuite():TestSuite
+			{
+				var testsToRun:TestSuite = new TestSuite();
+				
+				testsToRun.addTest(TestSuiteClass.suite());
+				testsToRun.addTest(new TestCaseClass("testFirstMethod"));
+			
+				return testsToRun;
+			}			
+						
+		]]>
+	</mx:Script>
+	
+	<flexunit:TestRunnerBase id="testRunner"/>
+	
+</mx:Application>

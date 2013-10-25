@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml">
+	
+	<mx:Text text="Enter width size:" />
+	
+	<mx:TextInput id="textInput" />
+	
+	<mx:Button id="clickButton" 
+		click="clickButton.width=Number(textInput.text)"  
+		label="Change button width size"/>
+			
+</mx:Application>

@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FxApplication xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" width="320" height="480" backgroundColor="0x000000" xmlns:th="http://ns.adobe.com/thermo/2009">
+	<transitions>
+		<Transition fromState="SearchPage" toState="DetailPage">
+			<Parallel>
+				<Parallel target="{fxvscrollbar1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{bitmapgraphic1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{btn1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{btn2}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{btn3}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{fxbutton1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{fxtextinput1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{textgraphic1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{rect1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{bitmapgraphic2}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{textgraphic2}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{textgraphic3}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{textgraphic4}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{path1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{path2}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{path3}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{path4}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{path5}">
+					<FxFade/>
+				</Parallel>
+			</Parallel>
+		</Transition>
+		<Transition fromState="DetailPage" toState="SearchPage">
+			<Parallel>
+				<Parallel target="{fxvscrollbar1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{bitmapgraphic1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{btn1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{btn2}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{btn3}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{fxbutton1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{fxtextinput1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{textgraphic1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{rect1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{bitmapgraphic2}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{textgraphic2}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{textgraphic3}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{textgraphic4}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{path1}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{path2}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{path3}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{path4}">
+					<FxFade/>
+				</Parallel>
+				<Parallel target="{path5}">
+					<FxFade/>
+				</Parallel>
+			</Parallel>
+		</Transition>
+	</transitions>
+	<states>
+		<State name="SearchPage" th:color="0xcc0000"/>
+		<State name="DetailPage" th:color="0x0081cc"/>
+	</states>
+	<DesignLayer d:userLabel="Background">
+		<BitmapGraphic source="@Embed('assets/SearchVideo/Gradient.png')" resizeMode="scale" d:userLabel="Gradient" top="0" left="0"/>
+	</DesignLayer>
+	<DesignLayer d:userLabel="Videos">
+		<DesignLayer d:userLabel="slider">
+			<FxVScrollBar left="287" top="11" skinClass="components.VerticalScrollbar1" id="fxvscrollbar1" includeIn="SearchPage"/>
+		</DesignLayer>
+		<BitmapGraphic source="@Embed('assets/SearchVideo/bg.png')" resizeMode="scale" d:userLabel="bg" left="8" top="9" id="bitmapgraphic1" includeIn="SearchPage"/>
+		<DesignLayer d:userLabel="Thumbnails">
+			<FxButton id="btn1" left="20" top="335" skinClass="components.Button5" label="2355 viewed" click="currentState='DetailPage'" includeIn="SearchPage"/>
+			<FxButton id="btn2" left="22" top="211" skinClass="components.Button5" label="2355 viewed" click="currentState='DetailPage'" includeIn="SearchPage"/>
+			<FxButton id="btn3" left="22" top="87" skinClass="components.Button5" label="2355 viewed" click="currentState='DetailPage'" left.DetailPage="22" includeIn="SearchPage"/>
+		</DesignLayer>
+	</DesignLayer>
+	<DesignLayer d:userLabel="Search">
+		<FxButton left="235" top="42" skinClass="components.Button1" label="GO" alpha.DetailPage="0.99" id="fxbutton1" includeIn="SearchPage"/>
+		<FxTextInput left="22" top="43" skinClass="components.TextInput1" alpha.DetailPage="0.99" id="fxtextinput1" includeIn="SearchPage"/>
+		<TextGraphic d:userLabel="Search for videos" fontFamily="Helvetica" color="0xfffefe" fontSize="18" kerning="off" width="155.3" height="18.2" whiteSpaceCollapse="preserve" left="18.65" top="21.05" alpha.DetailPage="0.99" id="textgraphic1" includeIn="SearchPage">
+			<content>
+				<p>
+					<span>S</span>
+					<span kerning="auto">earch for videos</span>
+				</p>
+			</content>
+		</TextGraphic>
+	</DesignLayer>
+	<DesignLayer d:userLabel="DetailGraphics">
+		<Rect includeIn="DetailPage" height="239" width="319" left="0" top="0" id="rect1">
+			<fill>
+				<SolidColor color="0x000000"/>
+			</fill>
+			<stroke>
+				<SolidColorStroke color="0x000000" weight="1"/>
+			</stroke>
+		</Rect>
+		<BitmapGraphic source="@Embed('assets/videoPlaceHolder.jpg')" left="0" top="0" resizeMode="scale" includeIn="DetailPage" id="bitmapgraphic2"/>
+		<TextGraphic includeIn="DetailPage" color="0xfffefe" left="14" text="Video Title" fontSize="20" fontFamily="Helvetica" top="258" height="22" width="284" id="textgraphic2"/>
+		<TextGraphic color="0xfffefe" left="14" fontSize="15" fontFamily="Helvetica" top="441" height="20" width="278" includeIn="DetailPage" text="2354 viewed" id="textgraphic3"/>
+		<TextGraphic color="0xfffefe" left="14" fontSize="15" fontFamily="Helvetica" top="286" height="106" width="284" text="Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullmcorper suscipit lobortis nislut aliquip ex ea commodo" includeIn="DetailPage" id="textgraphic4"/>
+		<Path includeIn="DetailPage" height="34" left="15" width="34" data="M 28.75 33.65 L 17.79 27.95 6.88 33.75 8.92 21.56 0.03 12.98 12.25 11.15 17.67 0.05 23.18 11.10 35.42 12.82 26.61 21.48 Z " top="395" id="path1">
+			<fill>
+				<SolidColor color="0xf4f2f2"/>
+			</fill>
+			<stroke>
+				<SolidColorStroke color="0x535456" weight="1"/>
+			</stroke>
+		</Path>
+		<Path height="34" left="55" width="34" data="M 28.75 33.65 L 17.79 27.95 6.88 33.75 8.92 21.56 0.03 12.98 12.25 11.15 17.67 0.05 23.18 11.10 35.42 12.82 26.61 21.48 Z " top="395" includeIn="DetailPage" id="path2">
+			<fill>
+				<SolidColor color="0xf4f2f2"/>
+			</fill>
+			<stroke>
+				<SolidColorStroke color="0x535456" weight="1"/>
+			</stroke>
+		</Path>
+		<Path height="34" left="175" width="34" data="M 28.75 33.65 L 17.79 27.95 6.88 33.75 8.92 21.56 0.03 12.98 12.25 11.15 17.67 0.05 23.18 11.10 35.42 12.82 26.61 21.48 Z " top="395" includeIn="DetailPage" id="path3">
+			<fill>
+				<SolidColor color="0xf4f2f2"/>
+			</fill>
+			<stroke>
+				<SolidColorStroke color="0x535456" weight="1"/>
+			</stroke>
+		</Path>
+		<Path height="34" left="135" width="34" data="M 28.75 33.65 L 17.79 27.95 6.88 33.75 8.92 21.56 0.03 12.98 12.25 11.15 17.67 0.05 23.18 11.10 35.42 12.82 26.61 21.48 Z " top="395" includeIn="DetailPage" id="path4">
+			<fill>
+				<SolidColor color="0xf4f2f2"/>
+			</fill>
+			<stroke>
+				<SolidColorStroke color="0x535456" weight="1"/>
+			</stroke>
+		</Path>
+		<Path height="34" left="95" width="34" data="M 28.75 33.65 L 17.79 27.95 6.88 33.75 8.92 21.56 0.03 12.98 12.25 11.15 17.67 0.05 23.18 11.10 35.42 12.82 26.61 21.48 Z " top="395" includeIn="DetailPage" id="path5">
+			<fill>
+				<SolidColor color="0xf4f2f2"/>
+			</fill>
+			<stroke>
+				<SolidColorStroke color="0x535456" weight="1"/>
+			</stroke>
+		</Path>
+	</DesignLayer>
+</FxApplication>

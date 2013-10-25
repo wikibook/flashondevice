@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin xmlns="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008" resizeMode="scale">
+	<transitions>
+		<Transition fromState="up" toState="over"/>
+		<Transition fromState="up" toState="down"/>
+		<Transition fromState="up" toState="disabled"/>
+		<Transition fromState="over" toState="up"/>
+		<Transition fromState="over" toState="down"/>
+		<Transition fromState="over" toState="disabled"/>
+		<Transition fromState="down" toState="up"/>
+		<Transition fromState="down" toState="over"/>
+		<Transition fromState="down" toState="disabled"/>
+		<Transition fromState="disabled" toState="up"/>
+		<Transition fromState="disabled" toState="over"/>
+		<Transition fromState="disabled" toState="down"/>
+	</transitions>
+	<states>
+		<State name="up"/>
+		<State name="over"/>
+		<State name="down"/>
+		<State name="disabled"/>
+	</states>
+	<Metadata>[HostComponent("mx.components.FxButton")]</Metadata>
+	<Group d:userLabel="fastForwardButton" top="0" left="0">
+		<Ellipse blendMode="darken" width="80.5435" height="80.3896" ai:knockout="0" top="1.729" left="0">
+			<fill>
+				<SolidColor color="0x3a3a3a"/>
+			</fill>
+		</Ellipse>
+		<Path alpha="0.6" winding="nonZero" ai:knockout="0" data="M 75.196 28.638 C 75.241 28.739 75.263 28.845 75.302 28.953 C 77.198 31.931 78.353 35.431 78.583 39.157 C 79.338 41.129 79.766 43.247 79.906 45.443 C 80.27 44.941 80.544 44.425 80.544 43.861 C 80.544 31.752 76.038 20.783 68.75 12.85 C 61.459 4.908 51.394 0 40.271 0 C 18.032 0 0 19.638 0 43.861 C 0 44.852 0.58 45.757 1.573 46.582 C 1.444 43.57 1.751 40.523 2.599 37.627 C 2.614 37.575 2.642 37.53 2.658 37.48 C 2.973 35.832 3.436 34.223 4.086 32.694 C 4.507 30.504 5.228 28.369 6.335 26.375 C 13.496 13.494 26.719 2.216 41.148 3.522 C 55.96 4.863 68.655 13.442 75.196 28.638 Z" top="0" left="0">
+			<fill>
+				<SolidColor color="0x999999"/>
+			</fill>
+		</Path>
+		<Group d:id="6" top="3.35" left="0">
+			<Path alpha="0.6" winding="nonZero" ai:knockout="0" data="M 80.544 40.89 C 80.544 63.474 0 63.474 0 40.89 C 0 18.305 18.032 0 40.271 0 C 62.512 0 80.544 18.305 80.544 40.89 Z" top="0" left="0">
+				<fill>
+					<LinearGradient x="40.3887" y="29.3447" scaleX="82.0937" rotation="-89.4177">
+						<GradientEntry color="0x666666" ratio="0"/>
+						<GradientEntry color="0x454545" alpha="0.83" ratio="0.208589"/>
+						<GradientEntry color="0x0c0c0c" alpha="0.93" ratio="0.515337"/>
+						<GradientEntry ratio="0.576687"/>
+						<GradientEntry ratio="0.785276"/>
+						<GradientEntry alpha="0.83" ratio="0.993865"/>
+					</LinearGradient>
+				</fill>
+			</Path>
+		</Group>
+		<Group d:locked="true" top="30.95" left="21.75">
+			<Group ai:knockout="0" d:id="7" top="0" left="22.45">
+				<filters>
+					<DropShadowFilter alpha="0.15" blurX="10" blurY="10" distance="1.41421" quality="3"/>
+				</filters>
+				<Path winding="nonZero" ai:knockout="0" data="M 0 0 L 0 25.724 L 22.477 12.857 L 0 0 Z" top="0" left="0">
+					<fill>
+						<SolidColor color="0xe6e6e6"/>
+					</fill>
+				</Path>
+			</Group>
+			<Group ai:knockout="0" d:id="8" top="0" left="0">
+				<filters>
+					<DropShadowFilter alpha="0.15" blurX="10" blurY="10" distance="1.41421" quality="3"/>
+				</filters>
+				<Path winding="nonZero" ai:knockout="0" data="M 0 0 L 0 25.724 L 22.478 12.857 L 0 0 Z" top="0" left="0">
+					<fill>
+						<SolidColor color="0xe6e6e6"/>
+					</fill>
+				</Path>
+			</Group>
+		</Group>
+	</Group>
+</Skin>

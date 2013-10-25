@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/commands
+END
+GetCalendarEventsCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/commands/GetCalendarEventsCommand.as
+END
+GetEntryCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/commands/GetEntryCommand.as
+END
+CreateEventCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/commands/CreateEventCommand.as
+END
+EditEventCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/commands/EditEventCommand.as
+END
+LoginCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/commands/LoginCommand.as
+END
+SelectCalendarCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/commands/SelectCalendarCommand.as
+END
+CheckForUpdatesCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/commands/CheckForUpdatesCommand.as
+END
+GetCalendarsCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/commands/GetCalendarsCommand.as
+END
+SetCurrentDateCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/31/trunk/PART%202/chapter6/source/Google_Calendar/Google_Calendar/classes/com/jxl/goocal/commands/SetCurrentDateCommand.as
+END

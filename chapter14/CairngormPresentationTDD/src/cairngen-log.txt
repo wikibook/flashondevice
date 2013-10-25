@@ -1,0 +1,91 @@
+
+add-command-to-controller:
+     [echo] @Invoking Cairngen on [test] --> Inserting addCommand in FrontController for SaveUserEvent and SaveUserCommand
+
+BUILD FAILED
+
+/Users/elad/Documents/workspace/test/tools/Cairngen 2.2/build.xml:393: Unable to create javax script engine for javascript
+	at org.apache.tools.ant.util.optional.JavaxScriptRunner.evaluateScript(JavaxScriptRunner.java:108)
+	at org.apache.tools.ant.util.optional.JavaxScriptRunner.executeScript(JavaxScriptRunner.java:69)
+	at org.apache.tools.ant.taskdefs.optional.script.ScriptDef.executeScript(ScriptDef.java:347)
+	at org.apache.tools.ant.taskdefs.optional.script.ScriptDefBase.execute(ScriptDefBase.java:50)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:105)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:357)
+	at org.apache.tools.ant.Target.performTasks(Target.java:385)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1329)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1298)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.ui.antsupport.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1181)
+	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.run(InternalAntRunner.java:423)
+	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.main(InternalAntRunner.java:137)
+Caused by: Unable to create javax script engine for javascript
+	at org.apache.tools.ant.util.optional.JavaxScriptRunner.evaluateScript(JavaxScriptRunner.java:86)
+	... 19 more
+--- Nested Exception ---
+Unable to create javax script engine for javascript
+	at org.apache.tools.ant.util.optional.JavaxScriptRunner.evaluateScript(JavaxScriptRunner.java:86)
+	at org.apache.tools.ant.util.optional.JavaxScriptRunner.executeScript(JavaxScriptRunner.java:69)
+	at org.apache.tools.ant.taskdefs.optional.script.ScriptDef.executeScript(ScriptDef.java:347)
+	at org.apache.tools.ant.taskdefs.optional.script.ScriptDefBase.execute(ScriptDefBase.java:50)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:105)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:357)
+	at org.apache.tools.ant.Target.performTasks(Target.java:385)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1329)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1298)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.ui.antsupport.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1181)
+	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.run(InternalAntRunner.java:423)
+	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.main(InternalAntRunner.java:137)
+
+add-command-to-controller:
+     [echo] @Invoking Cairngen on [test] --> Inserting addCommand in FrontController for SaveUserEvent and SaveUserCommand
+
+add-command-to-controller-cleanup:
+
+create-sequence-exclude-delegate:
+     [echo] @Invoking Cairngen on [test] --> Generating file(s): SaveUserEvent.as, SaveUserCommand.as
+     [copy] Copying 1 file to /Users/elad/Documents/workspace/test/src/com/elad/application/events
+     [copy] Copying 1 file to /Users/elad/Documents/workspace/test/src/com/elad/application/commands
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL
+
+add-command-to-controller:
+     [echo] @Invoking Cairngen on [test] --> Inserting addCommand in FrontController for StartupServicesEvent and StartupServicesCommand
+
+add-command-to-controller-cleanup:
+
+create-sequence-exclude-delegate:
+     [echo] @Invoking Cairngen on [test] --> Generating file(s): StartupServicesEvent.as, StartupServicesCommand.as
+     [copy] Copying 1 file to /Users/elad/Documents/workspace/test/src/com/elad/application/events
+     [copy] Copying 1 file to /Users/elad/Documents/workspace/test/src/com/elad/application/commands
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL
+
+add-command-to-controller:
+     [echo] @Invoking Cairngen on [test] --> Inserting addCommand in FrontController for UserSelectedFeedEvent and UserSelectedFeedCommand
+
+add-command-to-controller-cleanup:
+
+create-sequence-exclude-delegate:
+     [echo] @Invoking Cairngen on [test] --> Generating file(s): UserSelectedFeedEvent.as, UserSelectedFeedCommand.as
+     [copy] Copying 1 file to /Users/elad/Documents/workspace/test/src/com/elad/application/events
+     [copy] Copying 1 file to /Users/elad/Documents/workspace/test/src/com/elad/application/commands
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL
